@@ -1,0 +1,4 @@
+/Users/bentan/chessEngine/build/CMakeFiles/chessEngine.dir
+/Users/bentan/chessEngine/build/CMakeFiles/ALL_BUILD.dir
+/Users/bentan/chessEngine/build/CMakeFiles/ZERO_CHECK.dir
+/Users/bentan/chessEngine/build/external/thc-chess-library/CMakeFiles/thc_chess.dir
