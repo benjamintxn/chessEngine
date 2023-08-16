@@ -53,11 +53,32 @@ set_target_properties(thc_chess_static PROPERTIES
   INTERFACE_INCLUDE_DIRECTORIES "/Users/bentan/chessEngine/external/thc-chess-library/src"
 )
 
-# Import target "thc_chess_static" for configuration ""
-set_property(TARGET thc_chess_static APPEND PROPERTY IMPORTED_CONFIGURATIONS NOCONFIG)
+# Import target "thc_chess_static" for configuration "Debug"
+set_property(TARGET thc_chess_static APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(thc_chess_static PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_NOCONFIG "CXX"
-  IMPORTED_LOCATION_NOCONFIG "/Users/bentan/chessEngine/build/external/thc-chess-library/libthc_chess_static.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/Users/bentan/chessEngine/build/external/thc-chess-library/Debug/libthc_chess_static.a"
+  )
+
+# Import target "thc_chess_static" for configuration "Release"
+set_property(TARGET thc_chess_static APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+set_target_properties(thc_chess_static PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
+  IMPORTED_LOCATION_RELEASE "/Users/bentan/chessEngine/build/external/thc-chess-library/Release/libthc_chess_static.a"
+  )
+
+# Import target "thc_chess_static" for configuration "MinSizeRel"
+set_property(TARGET thc_chess_static APPEND PROPERTY IMPORTED_CONFIGURATIONS MINSIZEREL)
+set_target_properties(thc_chess_static PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_MINSIZEREL "CXX"
+  IMPORTED_LOCATION_MINSIZEREL "/Users/bentan/chessEngine/build/external/thc-chess-library/MinSizeRel/libthc_chess_static.a"
+  )
+
+# Import target "thc_chess_static" for configuration "RelWithDebInfo"
+set_property(TARGET thc_chess_static APPEND PROPERTY IMPORTED_CONFIGURATIONS RELWITHDEBINFO)
+set_target_properties(thc_chess_static PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_RELWITHDEBINFO "CXX"
+  IMPORTED_LOCATION_RELWITHDEBINFO "/Users/bentan/chessEngine/build/external/thc-chess-library/RelWithDebInfo/libthc_chess_static.a"
   )
 
 # This file does not depend on other imported targets which have
