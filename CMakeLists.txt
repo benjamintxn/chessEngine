@@ -9,3 +9,10 @@ add_executable(chessEngine chessEngine/main.cpp)
 
 # Link against thc_chess_static
 target_link_libraries(chessEngine PRIVATE thc_chess_static)
+
+# Find and include SFML
+find_package(SFML 2.6 COMPONENTS graphics window system REQUIRED)
+target_link_libraries(chessEngine PRIVATE sfml-graphics sfml-window sfml-system)
+
+# Include directories for external libraries
+target_include_directories(chessEngine PRIVATE external/thc-chess-library/src)

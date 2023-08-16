@@ -16,129 +16,57 @@ events:
       - "/Applications/CMake.app/Contents/share/cmake-3.27/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt:2 (project)"
     message: |
-      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-      Compiler:  
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc 
       Build flags: 
       Id flags:  
       
       The output was:
+      1
+      ld: library not found for -lSystem
+      clang: error: linker command failed with exit code 1 (use -v to see invocation)
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/Applications/CMake.app/Contents/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/Applications/CMake.app/Contents/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/Applications/CMake.app/Contents/share/cmake-3.27/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
       0
-      2023-08-16 12:50:07.160 xcodebuild[15049:529596] DVTCoreDeviceEnabledState: DVTCoreDeviceEnabledState_Disabled set via user default (DVTEnableCoreDevice=disabled)
-      Command line invocation:
-          /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild
-      
-      User defaults from command line:
-          IDEPackageSupportUseBuiltinSCM = YES
-      
-      Computing target dependency graph and provisioning inputs
-      
-      Create build description
-      Build description signature: 6d7c20ebe1783454486e4ded54453559
-      Build description path: /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC/./XCBuildData/6d7c20ebe1783454486e4ded54453559.xcbuilddata
-      
-      warning: Building targets in manual order is deprecated - check "Parallelize build for command-line builds" in the project editor, or set DISABLE_MANUAL_TARGET_ORDER_BUILD_WARNING in any of the targets in the current build to suppress this warning
-      CreateBuildDirectory /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC
-          cd /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC/CompilerIdC.xcodeproj
-          builtin-create-build-directory /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC
-      
-      ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk /var/folders/dd/_05r781s7d5c04nmznkn_ch00000gn/C/com.apple.DeveloperTools/14.3.1-14E300c/Xcode/SDKStatCaches.noindex/macosx13.3-22E245-.sdkstatcache
-          cd /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC/CompilerIdC.xcodeproj
-          /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o /var/folders/dd/_05r781s7d5c04nmznkn_ch00000gn/C/com.apple.DeveloperTools/14.3.1-14E300c/Xcode/SDKStatCaches.noindex/macosx13.3-22E245-.sdkstatcache
-      
-      CreateBuildDirectory /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC/EagerLinkingTBDs/Debug
-          cd /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC/CompilerIdC.xcodeproj
-          builtin-create-build-directory /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC/EagerLinkingTBDs/Debug
-      
-      WriteAuxiliaryFile /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/DerivedSources/Entitlements.plist (in target 'CompilerIdC' from project 'CompilerIdC')
-          cd /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC
-          write-file /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/DerivedSources/Entitlements.plist
-      
-      ProcessProductPackaging "" /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC.xcent (in target 'CompilerIdC' from project 'CompilerIdC')
-          cd /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC
-          
-          Entitlements:
-          
-          {
-          "com.apple.application-identifier" = "";
-      }
-          
-          builtin-productPackagingUtility -entitlements -format xml -o /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC.xcent
-      
-      ProcessProductPackagingDER /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC.xcent /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC.xcent.der (in target 'CompilerIdC' from project 'CompilerIdC')
-          cd /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC
-          /usr/bin/derq query -f xml -i /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC.xcent -o /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC.xcent.der --raw
-      
-      WriteAuxiliaryFile /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/all-product-headers.yaml (in target 'CompilerIdC' from project 'CompilerIdC')
-          cd /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC
-          write-file /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/all-product-headers.yaml
-      
-      WriteAuxiliaryFile /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC.hmap (in target 'CompilerIdC' from project 'CompilerIdC')
-          cd /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC
-          write-file /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC.hmap
-      
-      WriteAuxiliaryFile /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-project-headers.hmap (in target 'CompilerIdC' from project 'CompilerIdC')
-          cd /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC
-          write-file /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-project-headers.hmap
-      
-      WriteAuxiliaryFile /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-generated-files.hmap (in target 'CompilerIdC' from project 'CompilerIdC')
-          cd /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC
-          write-file /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-generated-files.hmap
-      
-      WriteAuxiliaryFile /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-all-target-headers.hmap (in target 'CompilerIdC' from project 'CompilerIdC')
-          cd /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC
-          write-file /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-all-target-headers.hmap
-      
-      WriteAuxiliaryFile /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-all-non-framework-target-headers.hmap (in target 'CompilerIdC' from project 'CompilerIdC')
-          cd /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC
-          write-file /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-all-non-framework-target-headers.hmap
-      
-      WriteAuxiliaryFile /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-own-target-headers.hmap (in target 'CompilerIdC' from project 'CompilerIdC')
-          cd /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC
-          write-file /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-own-target-headers.hmap
-      
-      WriteAuxiliaryFile /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/CompilerIdC.LinkFileList (in target 'CompilerIdC' from project 'CompilerIdC')
-          cd /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC
-          write-file /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/CompilerIdC.LinkFileList
-      
-      CompileC /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/CMakeCCompilerId.o /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC/CMakeCCompilerId.c normal arm64 c com.apple.compilers.llvm.clang.1_0.compiler (in target 'CompilerIdC' from project 'CompilerIdC')
-          cd /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC
-          /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -ivfsstatcache /var/folders/dd/_05r781s7d5c04nmznkn_ch00000gn/C/com.apple.DeveloperTools/14.3.1-14E300c/Xcode/SDKStatCaches.noindex/macosx13.3-22E245-.sdkstatcache -target arm64-apple-macos13.3 -fmessage-length\\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\\=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-implicit-fallthrough -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fstrict-aliasing -Wdeprecated-declarations -g -fvisibility\\=hidden -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body -iquote /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-generated-files.hmap -I/Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-own-target-headers.hmap -I/Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-all-target-headers.hmap -iquote /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-project-headers.hmap -I/Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC/include -I/Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/DerivedSources-normal/arm64 -I/Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/DerivedSources/arm64 -I/Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/DerivedSources -F/Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC -MMD -MT dependencies -MF /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/CMakeCCompilerId.d --serialize-diagnostics /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/CMakeCCompilerId.dia -c /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC/CMakeCCompilerId.c -o /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/CMakeCCompilerId.o
-      
-      Ld /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC/CompilerIdC normal (in target 'CompilerIdC' from project 'CompilerIdC')
-          cd /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC
-          /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-macos13.3 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -L/Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC/EagerLinkingTBDs/Debug -L/Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC -F/Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC/EagerLinkingTBDs/Debug -F/Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC -filelist /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/CompilerIdC.LinkFileList -Xlinker -object_path_lto -Xlinker /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/CompilerIdC_lto.o -Xlinker -no_adhoc_codesign -Xlinker -dependency_info -Xlinker /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/CompilerIdC_dependency_info.dat -o /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC/CompilerIdC
-      
-      WriteAuxiliaryFile /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh (in target 'CompilerIdC' from project 'CompilerIdC')
-          cd /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC
-          write-file /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
-      
-      PhaseScriptExecution Run\\ Script /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh (in target 'CompilerIdC' from project 'CompilerIdC')
-          cd /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC
-          /bin/sh -c /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
-      GCC_VERSION=com.apple.compilers.llvm.clang.1_0
-      ARCHS=arm64
-      
-      CodeSign /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC/CompilerIdC (in target 'CompilerIdC' from project 'CompilerIdC')
-          cd /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC
-          
-          Signing Identity:     "-"
-          
-          /usr/bin/codesign --force --sign - --entitlements /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC.xcent --timestamp\\=none --generate-entitlement-der /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC/CompilerIdC
-      
-      RegisterExecutionPolicyException /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC/CompilerIdC (in target 'CompilerIdC' from project 'CompilerIdC')
-          cd /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC
-          builtin-RegisterExecutionPolicyException /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC/CompilerIdC
-      
-      warning: Traditional headermap style is no longer supported; please migrate to using separate headermaps and set 'ALWAYS_SEARCH_USER_PATHS' to NO. (in target 'CompilerIdC' from project 'CompilerIdC')
-      note: Run script build phase 'Run Script' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'CompilerIdC' from project 'CompilerIdC')
-      ** BUILD SUCCEEDED **
       
       
-      
-      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC"
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
       
       The C compiler identification is AppleClang, found in:
-        /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC/CompilerIdC
+        /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdC/CMakeCCompilerId.o
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/Applications/CMake.app/Contents/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/Applications/CMake.app/Contents/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/Applications/CMake.app/Contents/share/cmake-3.27/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      ld: library not found for -lc++
+      clang: error: linker command failed with exit code 1 (use -v to see invocation)
+      
       
   -
     kind: "message-v1"
@@ -149,128 +77,18 @@ events:
       - "CMakeLists.txt:2 (project)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-      Compiler:  
+      Compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ 
       Build flags: 
-      Id flags:  
+      Id flags: -c 
       
       The output was:
       0
-      2023-08-16 12:50:09.466 xcodebuild[15072:529737] DVTCoreDeviceEnabledState: DVTCoreDeviceEnabledState_Disabled set via user default (DVTEnableCoreDevice=disabled)
-      Command line invocation:
-          /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild
-      
-      User defaults from command line:
-          IDEPackageSupportUseBuiltinSCM = YES
-      
-      Computing target dependency graph and provisioning inputs
-      
-      Create build description
-      Build description signature: 984244962be36a3d8b251d63ef8ca243
-      Build description path: /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX/./XCBuildData/984244962be36a3d8b251d63ef8ca243.xcbuilddata
-      
-      warning: Building targets in manual order is deprecated - check "Parallelize build for command-line builds" in the project editor, or set DISABLE_MANUAL_TARGET_ORDER_BUILD_WARNING in any of the targets in the current build to suppress this warning
-      CreateBuildDirectory /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX
-          cd /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX/CompilerIdCXX.xcodeproj
-          builtin-create-build-directory /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX
-      
-      ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk /var/folders/dd/_05r781s7d5c04nmznkn_ch00000gn/C/com.apple.DeveloperTools/14.3.1-14E300c/Xcode/SDKStatCaches.noindex/macosx13.3-22E245-.sdkstatcache
-          cd /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX/CompilerIdCXX.xcodeproj
-          /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o /var/folders/dd/_05r781s7d5c04nmznkn_ch00000gn/C/com.apple.DeveloperTools/14.3.1-14E300c/Xcode/SDKStatCaches.noindex/macosx13.3-22E245-.sdkstatcache
-      
-      CreateBuildDirectory /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX/EagerLinkingTBDs/Debug
-          cd /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX/CompilerIdCXX.xcodeproj
-          builtin-create-build-directory /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX/EagerLinkingTBDs/Debug
-      
-      WriteAuxiliaryFile /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/DerivedSources/Entitlements.plist (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
-          cd /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX
-          write-file /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/DerivedSources/Entitlements.plist
-      
-      ProcessProductPackaging "" /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX.xcent (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
-          cd /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX
-          
-          Entitlements:
-          
-          {
-          "com.apple.application-identifier" = "";
-      }
-          
-          builtin-productPackagingUtility -entitlements -format xml -o /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX.xcent
-      
-      ProcessProductPackagingDER /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX.xcent /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX.xcent.der (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
-          cd /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX
-          /usr/bin/derq query -f xml -i /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX.xcent -o /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX.xcent.der --raw
-      
-      WriteAuxiliaryFile /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/all-product-headers.yaml (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
-          cd /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX
-          write-file /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/all-product-headers.yaml
-      
-      WriteAuxiliaryFile /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX.hmap (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
-          cd /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX
-          write-file /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX.hmap
-      
-      WriteAuxiliaryFile /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-project-headers.hmap (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
-          cd /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX
-          write-file /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-project-headers.hmap
-      
-      WriteAuxiliaryFile /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-own-target-headers.hmap (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
-          cd /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX
-          write-file /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-own-target-headers.hmap
-      
-      WriteAuxiliaryFile /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-all-target-headers.hmap (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
-          cd /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX
-          write-file /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-all-target-headers.hmap
-      
-      WriteAuxiliaryFile /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-generated-files.hmap (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
-          cd /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX
-          write-file /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-generated-files.hmap
-      
-      WriteAuxiliaryFile /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-all-non-framework-target-headers.hmap (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
-          cd /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX
-          write-file /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-all-non-framework-target-headers.hmap
-      
-      WriteAuxiliaryFile /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/CompilerIdCXX.LinkFileList (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
-          cd /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX
-          write-file /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/CompilerIdCXX.LinkFileList
-      
-      CompileC /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/CMakeCXXCompilerId.o /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX/CMakeCXXCompilerId.cpp normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
-          cd /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX
-          /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -ivfsstatcache /var/folders/dd/_05r781s7d5c04nmznkn_ch00000gn/C/com.apple.DeveloperTools/14.3.1-14E300c/Xcode/SDKStatCaches.noindex/macosx13.3-22E245-.sdkstatcache -target arm64-apple-macos13.3 -fmessage-length\\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\\=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -Wno-implicit-fallthrough -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility\\=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -iquote /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-generated-files.hmap -I/Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-own-target-headers.hmap -I/Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-all-target-headers.hmap -iquote /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-project-headers.hmap -I/Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX/include -I/Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/DerivedSources-normal/arm64 -I/Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/DerivedSources/arm64 -I/Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/DerivedSources -F/Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX -MMD -MT dependencies -MF /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/CMakeCXXCompilerId.d --serialize-diagnostics /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/CMakeCXXCompilerId.dia -c /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX/CMakeCXXCompilerId.cpp -o /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/CMakeCXXCompilerId.o
-      
-      Ld /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX/CompilerIdCXX normal (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
-          cd /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX
-          /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -Xlinker -reproducible -target arm64-apple-macos13.3 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -L/Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX/EagerLinkingTBDs/Debug -L/Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX -F/Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX/EagerLinkingTBDs/Debug -F/Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX -filelist /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/CompilerIdCXX.LinkFileList -Xlinker -object_path_lto -Xlinker /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/CompilerIdCXX_lto.o -Xlinker -no_adhoc_codesign -Xlinker -dependency_info -Xlinker /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/CompilerIdCXX_dependency_info.dat -o /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX/CompilerIdCXX
-      
-      WriteAuxiliaryFile /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
-          cd /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX
-          write-file /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
-      
-      PhaseScriptExecution Run\\ Script /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
-          cd /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX
-          /bin/sh -c /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
-      GCC_VERSION=com.apple.compilers.llvm.clang.1_0
-      ARCHS=arm64
-      
-      CodeSign /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX/CompilerIdCXX (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
-          cd /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX
-          
-          Signing Identity:     "-"
-          
-          /usr/bin/codesign --force --sign - --entitlements /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX.xcent --timestamp\\=none --generate-entitlement-der /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX/CompilerIdCXX
-      
-      RegisterExecutionPolicyException /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX/CompilerIdCXX (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
-          cd /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX
-          builtin-RegisterExecutionPolicyException /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX/CompilerIdCXX
-      
-      warning: Traditional headermap style is no longer supported; please migrate to using separate headermaps and set 'ALWAYS_SEARCH_USER_PATHS' to NO. (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
-      note: Run script build phase 'Run Script' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
-      ** BUILD SUCCEEDED **
       
       
-      
-      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX"
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
       
       The CXX compiler identification is AppleClang, found in:
-        /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX/CompilerIdCXX
+        /Users/bentan/chessEngine/build/CMakeFiles/3.27.2/CompilerIdCXX/CMakeCXXCompilerId.o
       
   -
     kind: "try_compile-v1"
@@ -281,108 +99,56 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi"
-      binary: "/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi"
+      source: "/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-ET8JP6"
+      binary: "/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-ET8JP6"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
-      CMAKE_C_FLAGS_DEBUG: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
       CMAKE_EXE_LINKER_FLAGS: ""
       CMAKE_OSX_ARCHITECTURES: ""
       CMAKE_OSX_DEPLOYMENT_TARGET: ""
-      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk"
     buildResult:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi'
+        Change Dir: '/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-ET8JP6'
         
-        Run Build Command(s): /usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_9d939 -parallelizeTargets -configuration Debug -hideShellScriptEnvironment
-        2023-08-16 12:50:10.522 xcodebuild[15097:529819] DVTCoreDeviceEnabledState: DVTCoreDeviceEnabledState_Disabled set via user default (DVTEnableCoreDevice=disabled)
-        Command line invocation:
-            /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_9d939 -parallelizeTargets -configuration Debug -hideShellScriptEnvironment
-        
-        User defaults from command line:
-            HideShellScriptEnvironment = YES
-            IDEPackageSupportUseBuiltinSCM = YES
-        
-        Computing target dependency graph and provisioning inputs
-        
-        Create build description
-        Build description signature: 86bb28581b2148d2f57350a71b3433a2
-        Build description path: /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/XCBuildData/86bb28581b2148d2f57350a71b3433a2.xcbuilddata
-        
-        note: Building targets in dependency order
-        CreateBuildDirectory /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/Debug
-            cd /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/CMAKE_TRY_COMPILE.xcodeproj
-            builtin-create-build-directory /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/Debug
-        
-        CreateBuildDirectory /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build
-            cd /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/CMAKE_TRY_COMPILE.xcodeproj
-            builtin-create-build-directory /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build
-        
-        ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk /var/folders/dd/_05r781s7d5c04nmznkn_ch00000gn/C/com.apple.DeveloperTools/14.3.1-14E300c/Xcode/SDKStatCaches.noindex/macosx13.3-22E245-.sdkstatcache
-            cd /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/CMAKE_TRY_COMPILE.xcodeproj
-            /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o /var/folders/dd/_05r781s7d5c04nmznkn_ch00000gn/C/com.apple.DeveloperTools/14.3.1-14E300c/Xcode/SDKStatCaches.noindex/macosx13.3-22E245-.sdkstatcache
-        
-        CreateBuildDirectory /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/EagerLinkingTBDs/Debug
-            cd /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/CMAKE_TRY_COMPILE.xcodeproj
-            builtin-create-build-directory /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/EagerLinkingTBDs/Debug
-        
-        WriteAuxiliaryFile /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/cmTC_9d939.build/Debug/Objects-normal/arm64/cmTC_9d939.LinkFileList (in target 'cmTC_9d939' from project 'CMAKE_TRY_COMPILE')
-            cd /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi
-            write-file /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/cmTC_9d939.build/Debug/Objects-normal/arm64/cmTC_9d939.LinkFileList
-        
-        CompileC /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/cmTC_9d939.build/Debug/Objects-normal/arm64/CMakeCCompilerABI.o /Applications/CMake.app/Contents/share/cmake-3.27/Modules/CMakeCCompilerABI.c normal arm64 c com.apple.compilers.llvm.clang.1_0.compiler (in target 'cmTC_9d939' from project 'CMAKE_TRY_COMPILE')
-            cd /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi
-            /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -ivfsstatcache /var/folders/dd/_05r781s7d5c04nmznkn_ch00000gn/C/com.apple.DeveloperTools/14.3.1-14E300c/Xcode/SDKStatCaches.noindex/macosx13.3-22E245-.sdkstatcache -target arm64-apple-macos13.3 -fmessage-length\\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\\=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-implicit-fallthrough -DCMAKE_INTDIR\\=\\"Debug\\" -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body -I/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/Debug/include -I/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/cmTC_9d939.build/Debug/DerivedSources-normal/arm64 -I/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/cmTC_9d939.build/Debug/DerivedSources/arm64 -I/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/cmTC_9d939.build/Debug/DerivedSources -F/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/Debug -v -Wl,-v -MMD -MT dependencies -MF /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/cmTC_9d939.build/Debug/Objects-normal/arm64/CMakeCCompilerABI.d --serialize-diagnostics /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/cmTC_9d939.build/Debug/Objects-normal/arm64/CMakeCCompilerABI.dia -c /Applications/CMake.app/Contents/share/cmake-3.27/Modules/CMakeCCompilerABI.c -o /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/cmTC_9d939.build/Debug/Objects-normal/arm64/CMakeCCompilerABI.o
+        Run Build Command(s): /Applications/CMake.app/Contents/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_bcc6d/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_bcc6d.dir/build.make CMakeFiles/cmTC_bcc6d.dir/build
+        Building C object CMakeFiles/cmTC_bcc6d.dir/CMakeCCompilerABI.c.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk   -v -Wl,-v -MD -MT CMakeFiles/cmTC_bcc6d.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_bcc6d.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_bcc6d.dir/CMakeCCompilerABI.c.o -c /Applications/CMake.app/Contents/share/cmake-3.27/Modules/CMakeCCompilerABI.c
         Apple clang version 14.0.3 (clang-1403.0.22.14.1)
-        Target: arm64-apple-macos13.3
+        Target: arm64-apple-darwin22.6.0
         Thread model: posix
         InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
         clang: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
-         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx13.3.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=13.3 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +lse -target-feature +rdm -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +neon -target-feature +fp16fml -target-feature +ras -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -fallow-half-arguments-and-returns -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=lldb -target-linker-version 857.1 -v -fcoverage-compilation-dir=/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.3 -dependency-file /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/cmTC_9d939.build/Debug/Objects-normal/arm64/CMakeCCompilerABI.d -skip-unused-modulemap-deps -MT dependencies -ivfsstatcache /var/folders/dd/_05r781s7d5c04nmznkn_ch00000gn/C/com.apple.DeveloperTools/14.3.1-14E300c/Xcode/SDKStatCaches.noindex/macosx13.3-22E245-.sdkstatcache -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -D "CMAKE_INTDIR=\\"Debug\\"" -I /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/Debug/include -I /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/cmTC_9d939.build/Debug/DerivedSources-normal/arm64 -I /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/cmTC_9d939.build/Debug/DerivedSources/arm64 -I /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/cmTC_9d939.build/Debug/DerivedSources -F/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/Debug -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.3/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -O0 -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-implicit-fallthrough -Wdeprecated-declarations -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdebug-compilation-dir=/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi -ferror-limit 19 -fmacro-backtrace-limit 0 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -no-opaque-pointers -fpascal-strings -fmax-type-align=16 -fcommon -fdiagnostics-show-note-include-stack -serialize-diagnostic-file /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/cmTC_9d939.build/Debug/Objects-normal/arm64/CMakeCCompilerABI.dia -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/cmTC_9d939.build/Debug/Objects-normal/arm64/CMakeCCompilerABI.o -x c /Applications/CMake.app/Contents/share/cmake-3.27/Modules/CMakeCCompilerABI.c
+         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx13.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=13.3 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +lse -target-feature +rdm -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +neon -target-feature +fp16fml -target-feature +ras -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -fallow-half-arguments-and-returns -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=lldb -target-linker-version 857.1 -v -fcoverage-compilation-dir=/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-ET8JP6 -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.3 -dependency-file CMakeFiles/cmTC_bcc6d.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_bcc6d.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.3/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdebug-compilation-dir=/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-ET8JP6 -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -no-opaque-pointers -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_bcc6d.dir/CMakeCCompilerABI.c.o -x c /Applications/CMake.app/Contents/share/cmake-3.27/Modules/CMakeCCompilerABI.c
         clang -cc1 version 14.0.3 (clang-1403.0.22.14.1) default target arm64-apple-darwin22.6.0
-        ignoring nonexistent directory "/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/Debug/include"
-        ignoring nonexistent directory "/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/cmTC_9d939.build/Debug/DerivedSources-normal/arm64"
-        ignoring nonexistent directory "/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/cmTC_9d939.build/Debug/DerivedSources/arm64"
-        ignoring nonexistent directory "/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/cmTC_9d939.build/Debug/DerivedSources"
-        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/local/include"
-        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/Library/Frameworks"
+        ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/local/include"
+        ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/Library/Frameworks"
         #include "..." search starts here:
         #include <...> search starts here:
-         /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/Debug (framework directory)
          /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.3/include
-         /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include
+         /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include
          /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include
-         /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/System/Library/Frameworks (framework directory)
+         /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/Library/Frameworks (framework directory)
         End of search list.
-        
-        Ld /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/Debug/cmTC_9d939 normal (in target 'cmTC_9d939' from project 'CMAKE_TRY_COMPILE')
-            cd /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi
-            /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-macos13.3 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -L/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/EagerLinkingTBDs/Debug -L/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/Debug -F/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/EagerLinkingTBDs/Debug -F/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/Debug -filelist /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/cmTC_9d939.build/Debug/Objects-normal/arm64/cmTC_9d939.LinkFileList -Xlinker -no_deduplicate -v -Wl,-v -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Xlinker -dependency_info -Xlinker /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/cmTC_9d939.build/Debug/Objects-normal/arm64/cmTC_9d939_dependency_info.dat -o /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/Debug/cmTC_9d939
+        Linking C executable cmTC_bcc6d
+        /Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bcc6d.dir/link.txt --verbose=1
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_bcc6d.dir/CMakeCCompilerABI.c.o -o cmTC_bcc6d 
         Apple clang version 14.0.3 (clang-1403.0.22.14.1)
-        Target: arm64-apple-macos13.3
+        Target: arm64-apple-darwin22.6.0
         Thread model: posix
         InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
-         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 13.3.0 13.3 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/Debug/cmTC_9d939 -L/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/EagerLinkingTBDs/Debug -L/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/Debug -reproducible -filelist /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/cmTC_9d939.build/Debug/Objects-normal/arm64/cmTC_9d939.LinkFileList -no_deduplicate -v -search_paths_first -headerpad_max_install_names -dependency_info /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/cmTC_9d939.build/Debug/Objects-normal/arm64/cmTC_9d939_dependency_info.dat -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.3/lib/darwin/libclang_rt.osx.a -F/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/EagerLinkingTBDs/Debug -F/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/Debug
+         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 13.0.0 13.3 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -o cmTC_bcc6d -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_bcc6d.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.3/lib/darwin/libclang_rt.osx.a
         @(#)PROGRAM:ld  PROJECT:ld64-857.1
         BUILD 23:13:29 May  7 2023
         configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
         Library search paths:
-        	/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/EagerLinkingTBDs/Debug
-        	/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/Debug
-        	/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/lib
+        	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/lib
         Framework search paths:
-        	/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/EagerLinkingTBDs/Debug
-        	/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/Debug
-        	/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/
-        
-        RegisterExecutionPolicyException /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/Debug/cmTC_9d939 (in target 'cmTC_9d939' from project 'CMAKE_TRY_COMPILE')
-            cd /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi
-            builtin-RegisterExecutionPolicyException /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/Debug/cmTC_9d939
-        
-        ** BUILD SUCCEEDED **
-        
+        	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/
         
       exitCode: 0
   -
@@ -396,13 +162,13 @@ events:
         found start of include info
         found start of implicit include info
           add: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.3/include]
-          add: [/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include]
+          add: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include]
           add: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
         end of search list found
         collapse include dir [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.3/include] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.3/include]
-        collapse include dir [/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include]
+        collapse include dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include]
         collapse include dir [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
-        implicit include dirs: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.3/include;/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include;/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+        implicit include dirs: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.3/include;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include;/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
       
       
   -
@@ -414,79 +180,36 @@ events:
     message: |
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi']
+        ignore line: [Change Dir: '/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-ET8JP6']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_9d939 -parallelizeTargets -configuration Debug -hideShellScriptEnvironment]
-        ignore line: [2023-08-16 12:50:10.522 xcodebuild[15097:529819] DVTCoreDeviceEnabledState: DVTCoreDeviceEnabledState_Disabled set via user default (DVTEnableCoreDevice=disabled)]
-        ignore line: [Command line invocation:]
-        ignore line: [    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_9d939 -parallelizeTargets -configuration Debug -hideShellScriptEnvironment]
-        ignore line: []
-        ignore line: [User defaults from command line:]
-        ignore line: [    HideShellScriptEnvironment = YES]
-        ignore line: [    IDEPackageSupportUseBuiltinSCM = YES]
-        ignore line: []
-        ignore line: [Computing target dependency graph and provisioning inputs]
-        ignore line: []
-        ignore line: [Create build description]
-        ignore line: [Build description signature: 86bb28581b2148d2f57350a71b3433a2]
-        ignore line: [Build description path: /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/XCBuildData/86bb28581b2148d2f57350a71b3433a2.xcbuilddata]
-        ignore line: []
-        ignore line: [note: Building targets in dependency order]
-        ignore line: [CreateBuildDirectory /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/Debug]
-        ignore line: [    cd /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/CMAKE_TRY_COMPILE.xcodeproj]
-        ignore line: [    builtin-create-build-directory /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/Debug]
-        ignore line: []
-        ignore line: [CreateBuildDirectory /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build]
-        ignore line: [    cd /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/CMAKE_TRY_COMPILE.xcodeproj]
-        ignore line: [    builtin-create-build-directory /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build]
-        ignore line: []
-        ignore line: [ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk /var/folders/dd/_05r781s7d5c04nmznkn_ch00000gn/C/com.apple.DeveloperTools/14.3.1-14E300c/Xcode/SDKStatCaches.noindex/macosx13.3-22E245-.sdkstatcache]
-        ignore line: [    cd /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/CMAKE_TRY_COMPILE.xcodeproj]
-        ignore line: [    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o /var/folders/dd/_05r781s7d5c04nmznkn_ch00000gn/C/com.apple.DeveloperTools/14.3.1-14E300c/Xcode/SDKStatCaches.noindex/macosx13.3-22E245-.sdkstatcache]
-        ignore line: []
-        ignore line: [CreateBuildDirectory /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/EagerLinkingTBDs/Debug]
-        ignore line: [    cd /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/CMAKE_TRY_COMPILE.xcodeproj]
-        ignore line: [    builtin-create-build-directory /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/EagerLinkingTBDs/Debug]
-        ignore line: []
-        ignore line: [WriteAuxiliaryFile /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/cmTC_9d939.build/Debug/Objects-normal/arm64/cmTC_9d939.LinkFileList (in target 'cmTC_9d939' from project 'CMAKE_TRY_COMPILE')]
-        ignore line: [    cd /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi]
-        ignore line: [    write-file /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/cmTC_9d939.build/Debug/Objects-normal/arm64/cmTC_9d939.LinkFileList]
-        ignore line: []
-        ignore line: [CompileC /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/cmTC_9d939.build/Debug/Objects-normal/arm64/CMakeCCompilerABI.o /Applications/CMake.app/Contents/share/cmake-3.27/Modules/CMakeCCompilerABI.c normal arm64 c com.apple.compilers.llvm.clang.1_0.compiler (in target 'cmTC_9d939' from project 'CMAKE_TRY_COMPILE')]
-        ignore line: [    cd /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi]
-        ignore line: [    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -ivfsstatcache /var/folders/dd/_05r781s7d5c04nmznkn_ch00000gn/C/com.apple.DeveloperTools/14.3.1-14E300c/Xcode/SDKStatCaches.noindex/macosx13.3-22E245-.sdkstatcache -target arm64-apple-macos13.3 -fmessage-length\\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\\=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-implicit-fallthrough -DCMAKE_INTDIR\\=\\"Debug\\" -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body -I/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/Debug/include -I/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/cmTC_9d939.build/Debug/DerivedSources-normal/arm64 -I/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/cmTC_9d939.build/Debug/DerivedSources/arm64 -I/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/cmTC_9d939.build/Debug/DerivedSources -F/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/Debug -v -Wl -v -MMD -MT dependencies -MF /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/cmTC_9d939.build/Debug/Objects-normal/arm64/CMakeCCompilerABI.d --serialize-diagnostics /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/cmTC_9d939.build/Debug/Objects-normal/arm64/CMakeCCompilerABI.dia -c /Applications/CMake.app/Contents/share/cmake-3.27/Modules/CMakeCCompilerABI.c -o /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/cmTC_9d939.build/Debug/Objects-normal/arm64/CMakeCCompilerABI.o]
+        ignore line: [Run Build Command(s): /Applications/CMake.app/Contents/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_bcc6d/fast]
+        ignore line: [/Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_bcc6d.dir/build.make CMakeFiles/cmTC_bcc6d.dir/build]
+        ignore line: [Building C object CMakeFiles/cmTC_bcc6d.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk   -v -Wl -v -MD -MT CMakeFiles/cmTC_bcc6d.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_bcc6d.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_bcc6d.dir/CMakeCCompilerABI.c.o -c /Applications/CMake.app/Contents/share/cmake-3.27/Modules/CMakeCCompilerABI.c]
         ignore line: [Apple clang version 14.0.3 (clang-1403.0.22.14.1)]
-        ignore line: [Target: arm64-apple-macos13.3]
+        ignore line: [Target: arm64-apple-darwin22.6.0]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
         ignore line: [clang: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
-        ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx13.3.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=13.3 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +lse -target-feature +rdm -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +neon -target-feature +fp16fml -target-feature +ras -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -fallow-half-arguments-and-returns -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=lldb -target-linker-version 857.1 -v -fcoverage-compilation-dir=/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.3 -dependency-file /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/cmTC_9d939.build/Debug/Objects-normal/arm64/CMakeCCompilerABI.d -skip-unused-modulemap-deps -MT dependencies -ivfsstatcache /var/folders/dd/_05r781s7d5c04nmznkn_ch00000gn/C/com.apple.DeveloperTools/14.3.1-14E300c/Xcode/SDKStatCaches.noindex/macosx13.3-22E245-.sdkstatcache -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -D "CMAKE_INTDIR=\\"Debug\\"" -I /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/Debug/include -I /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/cmTC_9d939.build/Debug/DerivedSources-normal/arm64 -I /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/cmTC_9d939.build/Debug/DerivedSources/arm64 -I /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/cmTC_9d939.build/Debug/DerivedSources -F/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/Debug -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.3/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -O0 -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-implicit-fallthrough -Wdeprecated-declarations -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdebug-compilation-dir=/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi -ferror-limit 19 -fmacro-backtrace-limit 0 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -no-opaque-pointers -fpascal-strings -fmax-type-align=16 -fcommon -fdiagnostics-show-note-include-stack -serialize-diagnostic-file /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/cmTC_9d939.build/Debug/Objects-normal/arm64/CMakeCCompilerABI.dia -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/cmTC_9d939.build/Debug/Objects-normal/arm64/CMakeCCompilerABI.o -x c /Applications/CMake.app/Contents/share/cmake-3.27/Modules/CMakeCCompilerABI.c]
+        ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx13.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=13.3 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +lse -target-feature +rdm -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +neon -target-feature +fp16fml -target-feature +ras -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -fallow-half-arguments-and-returns -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=lldb -target-linker-version 857.1 -v -fcoverage-compilation-dir=/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-ET8JP6 -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.3 -dependency-file CMakeFiles/cmTC_bcc6d.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_bcc6d.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.3/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdebug-compilation-dir=/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-ET8JP6 -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -no-opaque-pointers -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_bcc6d.dir/CMakeCCompilerABI.c.o -x c /Applications/CMake.app/Contents/share/cmake-3.27/Modules/CMakeCCompilerABI.c]
         ignore line: [clang -cc1 version 14.0.3 (clang-1403.0.22.14.1) default target arm64-apple-darwin22.6.0]
-        ignore line: [ignoring nonexistent directory "/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/Debug/include"]
-        ignore line: [ignoring nonexistent directory "/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/cmTC_9d939.build/Debug/DerivedSources-normal/arm64"]
-        ignore line: [ignoring nonexistent directory "/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/cmTC_9d939.build/Debug/DerivedSources/arm64"]
-        ignore line: [ignoring nonexistent directory "/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/cmTC_9d939.build/Debug/DerivedSources"]
-        ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/local/include"]
-        ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/Library/Frameworks"]
+        ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/local/include"]
+        ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/Library/Frameworks"]
         ignore line: [#include "..." search starts here:]
         ignore line: [#include <...> search starts here:]
-        ignore line: [ /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/Debug (framework directory)]
         ignore line: [ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.3/include]
-        ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include]
         ignore line: [ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
-        ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/System/Library/Frameworks (framework directory)]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/Library/Frameworks (framework directory)]
         ignore line: [End of search list.]
-        ignore line: []
-        ignore line: [Ld /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/Debug/cmTC_9d939 normal (in target 'cmTC_9d939' from project 'CMAKE_TRY_COMPILE')]
-        ignore line: [    cd /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi]
-        ignore line: [    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-macos13.3 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -L/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/EagerLinkingTBDs/Debug -L/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/Debug -F/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/EagerLinkingTBDs/Debug -F/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/Debug -filelist /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/cmTC_9d939.build/Debug/Objects-normal/arm64/cmTC_9d939.LinkFileList -Xlinker -no_deduplicate -v -Wl -v -Wl -search_paths_first -Wl -headerpad_max_install_names -Xlinker -dependency_info -Xlinker /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/cmTC_9d939.build/Debug/Objects-normal/arm64/cmTC_9d939_dependency_info.dat -o /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/Debug/cmTC_9d939]
+        ignore line: [Linking C executable cmTC_bcc6d]
+        ignore line: [/Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bcc6d.dir/link.txt --verbose=1]
+        ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -Wl -search_paths_first -Wl -headerpad_max_install_names  -v -Wl -v CMakeFiles/cmTC_bcc6d.dir/CMakeCCompilerABI.c.o -o cmTC_bcc6d ]
         ignore line: [Apple clang version 14.0.3 (clang-1403.0.22.14.1)]
-        ignore line: [Target: arm64-apple-macos13.3]
+        ignore line: [Target: arm64-apple-darwin22.6.0]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
-        reduced line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 13.3.0 13.3 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/Debug/cmTC_9d939 -L/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/EagerLinkingTBDs/Debug -L/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/Debug -reproducible -filelist /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/cmTC_9d939.build/Debug/Objects-normal/arm64/cmTC_9d939.LinkFileList -no_deduplicate -v -search_paths_first -headerpad_max_install_names -dependency_info /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/cmTC_9d939.build/Debug/Objects-normal/arm64/cmTC_9d939_dependency_info.dat -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.3/lib/darwin/libclang_rt.osx.a -F/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/EagerLinkingTBDs/Debug -F/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/Debug]
-                  to: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 13.3.0 13.3 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/Debug/cmTC_9d939 -L/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/Debug -reproducible -filelist /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/cmTC_9d939.build/Debug/Objects-normal/arm64/cmTC_9d939.LinkFileList -no_deduplicate -v -search_paths_first -headerpad_max_install_names -dependency_info /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/cmTC_9d939.build/Debug/Objects-normal/arm64/cmTC_9d939_dependency_info.dat -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.3/lib/darwin/libclang_rt.osx.a -F/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/Debug]
-        link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 13.3.0 13.3 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/Debug/cmTC_9d939 -L/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/Debug -reproducible -filelist /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/cmTC_9d939.build/Debug/Objects-normal/arm64/cmTC_9d939.LinkFileList -no_deduplicate -v -search_paths_first -headerpad_max_install_names -dependency_info /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/cmTC_9d939.build/Debug/Objects-normal/arm64/cmTC_9d939_dependency_info.dat -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.3/lib/darwin/libclang_rt.osx.a -F/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/Debug]
+        link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 13.0.0 13.3 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -o cmTC_bcc6d -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_bcc6d.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.3/lib/darwin/libclang_rt.osx.a]
           arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
           arg [-demangle] ==> ignore
           arg [-lto_library] ==> ignore, skip following value
@@ -496,40 +219,28 @@ events:
           arg [arm64] ==> ignore
           arg [-platform_version] ==> ignore
           arg [macos] ==> ignore
-          arg [13.3.0] ==> ignore
+          arg [13.0.0] ==> ignore
           arg [13.3] ==> ignore
           arg [-syslibroot] ==> ignore
-          arg [/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk] ==> ignore
+          arg [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk] ==> ignore
           arg [-o] ==> ignore
-          arg [/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/Debug/cmTC_9d939] ==> ignore
-          arg [-L/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/Debug] ==> dir [/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/Debug]
-          arg [-reproducible] ==> ignore
-          arg [-filelist] ==> ignore
-          arg [/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/cmTC_9d939.build/Debug/Objects-normal/arm64/cmTC_9d939.LinkFileList] ==> ignore
-          arg [-no_deduplicate] ==> ignore
-          arg [-v] ==> ignore
+          arg [cmTC_bcc6d] ==> ignore
           arg [-search_paths_first] ==> ignore
           arg [-headerpad_max_install_names] ==> ignore
-          arg [-dependency_info] ==> ignore
-          arg [/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/cmTC_9d939.build/Debug/Objects-normal/arm64/cmTC_9d939_dependency_info.dat] ==> ignore
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_bcc6d.dir/CMakeCCompilerABI.c.o] ==> ignore
           arg [-lSystem] ==> lib [System]
           arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.3/lib/darwin/libclang_rt.osx.a] ==> lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.3/lib/darwin/libclang_rt.osx.a]
-          arg [-F/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/Debug] ==> ignore
-        Library search paths: [;/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/EagerLinkingTBDs/Debug;/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/Debug;/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/lib]
-        Framework search paths: [;/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/EagerLinkingTBDs/Debug;/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/Debug;/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/]
+        Library search paths: [;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/lib]
+        Framework search paths: [;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/]
         remove lib [System]
         remove lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.3/lib/darwin/libclang_rt.osx.a]
-        collapse library dir [/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/Debug] ==> [/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/Debug], skipping non-system directory
-        collapse library dir [/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/EagerLinkingTBDs/Debug] ==> [/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/EagerLinkingTBDs/Debug], skipping non-system directory
-        collapse library dir [/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/Debug] ==> [/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/Debug], skipping non-system directory
-        collapse library dir [/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/lib] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/lib]
-        collapse framework dir [/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/EagerLinkingTBDs/Debug] ==> [/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/build/EagerLinkingTBDs/Debug], skipping non-system directory
-        collapse framework dir [/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/Debug] ==> [/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-iVYdEi/Debug], skipping non-system directory
-        collapse framework dir [/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/System/Library/Frameworks]
+        collapse library dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/lib] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/lib]
+        collapse framework dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/Library/Frameworks]
         implicit libs: []
         implicit objs: []
-        implicit dirs: [/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/lib]
-        implicit fwks: [/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/System/Library/Frameworks]
+        implicit dirs: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/lib]
+        implicit fwks: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/Library/Frameworks]
       
       
   -
@@ -541,109 +252,57 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn"
-      binary: "/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn"
+      source: "/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-h9hf8e"
+      binary: "/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-h9hf8e"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
-      CMAKE_CXX_FLAGS_DEBUG: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
       CMAKE_EXE_LINKER_FLAGS: ""
       CMAKE_OSX_ARCHITECTURES: ""
       CMAKE_OSX_DEPLOYMENT_TARGET: ""
-      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk"
     buildResult:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn'
+        Change Dir: '/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-h9hf8e'
         
-        Run Build Command(s): /usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_4230c -parallelizeTargets -configuration Debug -hideShellScriptEnvironment
-        2023-08-16 12:50:11.289 xcodebuild[15119:529905] DVTCoreDeviceEnabledState: DVTCoreDeviceEnabledState_Disabled set via user default (DVTEnableCoreDevice=disabled)
-        Command line invocation:
-            /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_4230c -parallelizeTargets -configuration Debug -hideShellScriptEnvironment
-        
-        User defaults from command line:
-            HideShellScriptEnvironment = YES
-            IDEPackageSupportUseBuiltinSCM = YES
-        
-        Computing target dependency graph and provisioning inputs
-        
-        Create build description
-        Build description signature: 46d1fbdbfb9747e111f6025dece13343
-        Build description path: /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/XCBuildData/46d1fbdbfb9747e111f6025dece13343.xcbuilddata
-        
-        note: Building targets in dependency order
-        CreateBuildDirectory /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/Debug
-            cd /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/CMAKE_TRY_COMPILE.xcodeproj
-            builtin-create-build-directory /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/Debug
-        
-        CreateBuildDirectory /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build
-            cd /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/CMAKE_TRY_COMPILE.xcodeproj
-            builtin-create-build-directory /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build
-        
-        ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk /var/folders/dd/_05r781s7d5c04nmznkn_ch00000gn/C/com.apple.DeveloperTools/14.3.1-14E300c/Xcode/SDKStatCaches.noindex/macosx13.3-22E245-.sdkstatcache
-            cd /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/CMAKE_TRY_COMPILE.xcodeproj
-            /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o /var/folders/dd/_05r781s7d5c04nmznkn_ch00000gn/C/com.apple.DeveloperTools/14.3.1-14E300c/Xcode/SDKStatCaches.noindex/macosx13.3-22E245-.sdkstatcache
-        
-        CreateBuildDirectory /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/EagerLinkingTBDs/Debug
-            cd /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/CMAKE_TRY_COMPILE.xcodeproj
-            builtin-create-build-directory /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/EagerLinkingTBDs/Debug
-        
-        WriteAuxiliaryFile /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/cmTC_4230c.build/Debug/Objects-normal/arm64/cmTC_4230c.LinkFileList (in target 'cmTC_4230c' from project 'CMAKE_TRY_COMPILE')
-            cd /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn
-            write-file /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/cmTC_4230c.build/Debug/Objects-normal/arm64/cmTC_4230c.LinkFileList
-        
-        CompileC /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/cmTC_4230c.build/Debug/Objects-normal/arm64/CMakeCXXCompilerABI.o /Applications/CMake.app/Contents/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'cmTC_4230c' from project 'CMAKE_TRY_COMPILE')
-            cd /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn
-            /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -ivfsstatcache /var/folders/dd/_05r781s7d5c04nmznkn_ch00000gn/C/com.apple.DeveloperTools/14.3.1-14E300c/Xcode/SDKStatCaches.noindex/macosx13.3-22E245-.sdkstatcache -target arm64-apple-macos13.3 -fmessage-length\\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\\=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -Wno-implicit-fallthrough -DCMAKE_INTDIR\\=\\"Debug\\" -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -I/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/Debug/include -I/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/cmTC_4230c.build/Debug/DerivedSources-normal/arm64 -I/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/cmTC_4230c.build/Debug/DerivedSources/arm64 -I/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/cmTC_4230c.build/Debug/DerivedSources -F/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/Debug -v -Wl,-v -MMD -MT dependencies -MF /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/cmTC_4230c.build/Debug/Objects-normal/arm64/CMakeCXXCompilerABI.d --serialize-diagnostics /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/cmTC_4230c.build/Debug/Objects-normal/arm64/CMakeCXXCompilerABI.dia -c /Applications/CMake.app/Contents/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp -o /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/cmTC_4230c.build/Debug/Objects-normal/arm64/CMakeCXXCompilerABI.o
+        Run Build Command(s): /Applications/CMake.app/Contents/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_98296/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_98296.dir/build.make CMakeFiles/cmTC_98296.dir/build
+        Building CXX object CMakeFiles/cmTC_98296.dir/CMakeCXXCompilerABI.cpp.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk   -v -Wl,-v -MD -MT CMakeFiles/cmTC_98296.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_98296.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_98296.dir/CMakeCXXCompilerABI.cpp.o -c /Applications/CMake.app/Contents/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp
         Apple clang version 14.0.3 (clang-1403.0.22.14.1)
-        Target: arm64-apple-macos13.3
+        Target: arm64-apple-darwin22.6.0
         Thread model: posix
         InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
         clang: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
-         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx13.3.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=13.3 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +lse -target-feature +rdm -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +neon -target-feature +fp16fml -target-feature +ras -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -fallow-half-arguments-and-returns -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=lldb -target-linker-version 857.1 -v -fcoverage-compilation-dir=/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.3 -dependency-file /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/cmTC_4230c.build/Debug/Objects-normal/arm64/CMakeCXXCompilerABI.d -skip-unused-modulemap-deps -MT dependencies -ivfsstatcache /var/folders/dd/_05r781s7d5c04nmznkn_ch00000gn/C/com.apple.DeveloperTools/14.3.1-14E300c/Xcode/SDKStatCaches.noindex/macosx13.3-22E245-.sdkstatcache -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -D "CMAKE_INTDIR=\\"Debug\\"" -I /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/Debug/include -I /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/cmTC_4230c.build/Debug/DerivedSources-normal/arm64 -I /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/cmTC_4230c.build/Debug/DerivedSources/arm64 -I /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/cmTC_4230c.build/Debug/DerivedSources -F/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/Debug -stdlib=libc++ -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.3/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -O0 -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -Wno-implicit-fallthrough -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -fdebug-compilation-dir=/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn -ferror-limit 19 -fmacro-backtrace-limit 0 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -no-opaque-pointers -fcxx-exceptions -fexceptions -fpascal-strings -fmax-type-align=16 -fcommon -fdiagnostics-show-note-include-stack -serialize-diagnostic-file /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/cmTC_4230c.build/Debug/Objects-normal/arm64/CMakeCXXCompilerABI.dia -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/cmTC_4230c.build/Debug/Objects-normal/arm64/CMakeCXXCompilerABI.o -x c++ /Applications/CMake.app/Contents/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp
+         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx13.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=13.3 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +lse -target-feature +rdm -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +neon -target-feature +fp16fml -target-feature +ras -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -fallow-half-arguments-and-returns -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=lldb -target-linker-version 857.1 -v -fcoverage-compilation-dir=/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-h9hf8e -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.3 -dependency-file CMakeFiles/cmTC_98296.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_98296.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -stdlib=libc++ -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1 -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.3/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -fdebug-compilation-dir=/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-h9hf8e -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -no-opaque-pointers -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_98296.dir/CMakeCXXCompilerABI.cpp.o -x c++ /Applications/CMake.app/Contents/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp
         clang -cc1 version 14.0.3 (clang-1403.0.22.14.1) default target arm64-apple-darwin22.6.0
-        ignoring nonexistent directory "/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/Debug/include"
-        ignoring nonexistent directory "/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/cmTC_4230c.build/Debug/DerivedSources-normal/arm64"
-        ignoring nonexistent directory "/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/cmTC_4230c.build/Debug/DerivedSources/arm64"
-        ignoring nonexistent directory "/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/cmTC_4230c.build/Debug/DerivedSources"
-        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/local/include"
-        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/Library/Frameworks"
+        ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/local/include"
+        ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/Library/Frameworks"
         #include "..." search starts here:
         #include <...> search starts here:
-         /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/Debug (framework directory)
-         /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1
+         /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1
          /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.3/include
-         /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include
+         /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include
          /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include
-         /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/System/Library/Frameworks (framework directory)
+         /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/Library/Frameworks (framework directory)
         End of search list.
-        
-        Ld /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/Debug/cmTC_4230c normal (in target 'cmTC_4230c' from project 'CMAKE_TRY_COMPILE')
-            cd /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn
-            /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -Xlinker -reproducible -target arm64-apple-macos13.3 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -L/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/EagerLinkingTBDs/Debug -L/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/Debug -F/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/EagerLinkingTBDs/Debug -F/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/Debug -filelist /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/cmTC_4230c.build/Debug/Objects-normal/arm64/cmTC_4230c.LinkFileList -Xlinker -no_deduplicate -v -Wl,-v -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Xlinker -dependency_info -Xlinker /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/cmTC_4230c.build/Debug/Objects-normal/arm64/cmTC_4230c_dependency_info.dat -o /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/Debug/cmTC_4230c
+        Linking CXX executable cmTC_98296
+        /Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_98296.dir/link.txt --verbose=1
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_98296.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_98296 
         Apple clang version 14.0.3 (clang-1403.0.22.14.1)
-        Target: arm64-apple-macos13.3
+        Target: arm64-apple-darwin22.6.0
         Thread model: posix
         InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
-         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 13.3.0 13.3 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/Debug/cmTC_4230c -L/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/EagerLinkingTBDs/Debug -L/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/Debug -reproducible -filelist /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/cmTC_4230c.build/Debug/Objects-normal/arm64/cmTC_4230c.LinkFileList -no_deduplicate -v -search_paths_first -headerpad_max_install_names -dependency_info /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/cmTC_4230c.build/Debug/Objects-normal/arm64/cmTC_4230c_dependency_info.dat -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.3/lib/darwin/libclang_rt.osx.a -F/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/EagerLinkingTBDs/Debug -F/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/Debug
+         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 13.0.0 13.3 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -o cmTC_98296 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_98296.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.3/lib/darwin/libclang_rt.osx.a
         @(#)PROGRAM:ld  PROJECT:ld64-857.1
         BUILD 23:13:29 May  7 2023
         configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
         Library search paths:
-        	/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/EagerLinkingTBDs/Debug
-        	/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/Debug
-        	/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/lib
+        	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/lib
         Framework search paths:
-        	/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/EagerLinkingTBDs/Debug
-        	/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/Debug
-        	/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/
-        
-        RegisterExecutionPolicyException /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/Debug/cmTC_4230c (in target 'cmTC_4230c' from project 'CMAKE_TRY_COMPILE')
-            cd /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn
-            builtin-RegisterExecutionPolicyException /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/Debug/cmTC_4230c
-        
-        ** BUILD SUCCEEDED **
-        
+        	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/
         
       exitCode: 0
   -
@@ -656,16 +315,16 @@ events:
       Parsed CXX implicit include dir info: rv=done
         found start of include info
         found start of implicit include info
-          add: [/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1]
+          add: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1]
           add: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.3/include]
-          add: [/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include]
+          add: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include]
           add: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
         end of search list found
-        collapse include dir [/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1]
+        collapse include dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1]
         collapse include dir [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.3/include] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.3/include]
-        collapse include dir [/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include]
+        collapse include dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include]
         collapse include dir [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
-        implicit include dirs: [/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1;/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.3/include;/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include;/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+        implicit include dirs: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1;/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.3/include;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include;/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
       
       
   -
@@ -677,80 +336,37 @@ events:
     message: |
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn']
+        ignore line: [Change Dir: '/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-h9hf8e']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_4230c -parallelizeTargets -configuration Debug -hideShellScriptEnvironment]
-        ignore line: [2023-08-16 12:50:11.289 xcodebuild[15119:529905] DVTCoreDeviceEnabledState: DVTCoreDeviceEnabledState_Disabled set via user default (DVTEnableCoreDevice=disabled)]
-        ignore line: [Command line invocation:]
-        ignore line: [    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_4230c -parallelizeTargets -configuration Debug -hideShellScriptEnvironment]
-        ignore line: []
-        ignore line: [User defaults from command line:]
-        ignore line: [    HideShellScriptEnvironment = YES]
-        ignore line: [    IDEPackageSupportUseBuiltinSCM = YES]
-        ignore line: []
-        ignore line: [Computing target dependency graph and provisioning inputs]
-        ignore line: []
-        ignore line: [Create build description]
-        ignore line: [Build description signature: 46d1fbdbfb9747e111f6025dece13343]
-        ignore line: [Build description path: /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/XCBuildData/46d1fbdbfb9747e111f6025dece13343.xcbuilddata]
-        ignore line: []
-        ignore line: [note: Building targets in dependency order]
-        ignore line: [CreateBuildDirectory /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/Debug]
-        ignore line: [    cd /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/CMAKE_TRY_COMPILE.xcodeproj]
-        ignore line: [    builtin-create-build-directory /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/Debug]
-        ignore line: []
-        ignore line: [CreateBuildDirectory /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build]
-        ignore line: [    cd /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/CMAKE_TRY_COMPILE.xcodeproj]
-        ignore line: [    builtin-create-build-directory /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build]
-        ignore line: []
-        ignore line: [ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk /var/folders/dd/_05r781s7d5c04nmznkn_ch00000gn/C/com.apple.DeveloperTools/14.3.1-14E300c/Xcode/SDKStatCaches.noindex/macosx13.3-22E245-.sdkstatcache]
-        ignore line: [    cd /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/CMAKE_TRY_COMPILE.xcodeproj]
-        ignore line: [    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o /var/folders/dd/_05r781s7d5c04nmznkn_ch00000gn/C/com.apple.DeveloperTools/14.3.1-14E300c/Xcode/SDKStatCaches.noindex/macosx13.3-22E245-.sdkstatcache]
-        ignore line: []
-        ignore line: [CreateBuildDirectory /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/EagerLinkingTBDs/Debug]
-        ignore line: [    cd /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/CMAKE_TRY_COMPILE.xcodeproj]
-        ignore line: [    builtin-create-build-directory /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/EagerLinkingTBDs/Debug]
-        ignore line: []
-        ignore line: [WriteAuxiliaryFile /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/cmTC_4230c.build/Debug/Objects-normal/arm64/cmTC_4230c.LinkFileList (in target 'cmTC_4230c' from project 'CMAKE_TRY_COMPILE')]
-        ignore line: [    cd /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn]
-        ignore line: [    write-file /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/cmTC_4230c.build/Debug/Objects-normal/arm64/cmTC_4230c.LinkFileList]
-        ignore line: []
-        ignore line: [CompileC /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/cmTC_4230c.build/Debug/Objects-normal/arm64/CMakeCXXCompilerABI.o /Applications/CMake.app/Contents/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'cmTC_4230c' from project 'CMAKE_TRY_COMPILE')]
-        ignore line: [    cd /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn]
-        ignore line: [    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -ivfsstatcache /var/folders/dd/_05r781s7d5c04nmznkn_ch00000gn/C/com.apple.DeveloperTools/14.3.1-14E300c/Xcode/SDKStatCaches.noindex/macosx13.3-22E245-.sdkstatcache -target arm64-apple-macos13.3 -fmessage-length\\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\\=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -Wno-implicit-fallthrough -DCMAKE_INTDIR\\=\\"Debug\\" -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -I/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/Debug/include -I/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/cmTC_4230c.build/Debug/DerivedSources-normal/arm64 -I/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/cmTC_4230c.build/Debug/DerivedSources/arm64 -I/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/cmTC_4230c.build/Debug/DerivedSources -F/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/Debug -v -Wl -v -MMD -MT dependencies -MF /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/cmTC_4230c.build/Debug/Objects-normal/arm64/CMakeCXXCompilerABI.d --serialize-diagnostics /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/cmTC_4230c.build/Debug/Objects-normal/arm64/CMakeCXXCompilerABI.dia -c /Applications/CMake.app/Contents/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp -o /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/cmTC_4230c.build/Debug/Objects-normal/arm64/CMakeCXXCompilerABI.o]
+        ignore line: [Run Build Command(s): /Applications/CMake.app/Contents/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_98296/fast]
+        ignore line: [/Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_98296.dir/build.make CMakeFiles/cmTC_98296.dir/build]
+        ignore line: [Building CXX object CMakeFiles/cmTC_98296.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk   -v -Wl -v -MD -MT CMakeFiles/cmTC_98296.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_98296.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_98296.dir/CMakeCXXCompilerABI.cpp.o -c /Applications/CMake.app/Contents/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Apple clang version 14.0.3 (clang-1403.0.22.14.1)]
-        ignore line: [Target: arm64-apple-macos13.3]
+        ignore line: [Target: arm64-apple-darwin22.6.0]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
         ignore line: [clang: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
-        ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx13.3.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=13.3 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +lse -target-feature +rdm -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +neon -target-feature +fp16fml -target-feature +ras -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -fallow-half-arguments-and-returns -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=lldb -target-linker-version 857.1 -v -fcoverage-compilation-dir=/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.3 -dependency-file /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/cmTC_4230c.build/Debug/Objects-normal/arm64/CMakeCXXCompilerABI.d -skip-unused-modulemap-deps -MT dependencies -ivfsstatcache /var/folders/dd/_05r781s7d5c04nmznkn_ch00000gn/C/com.apple.DeveloperTools/14.3.1-14E300c/Xcode/SDKStatCaches.noindex/macosx13.3-22E245-.sdkstatcache -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -D "CMAKE_INTDIR=\\"Debug\\"" -I /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/Debug/include -I /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/cmTC_4230c.build/Debug/DerivedSources-normal/arm64 -I /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/cmTC_4230c.build/Debug/DerivedSources/arm64 -I /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/cmTC_4230c.build/Debug/DerivedSources -F/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/Debug -stdlib=libc++ -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.3/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -O0 -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -Wno-implicit-fallthrough -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -fdebug-compilation-dir=/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn -ferror-limit 19 -fmacro-backtrace-limit 0 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -no-opaque-pointers -fcxx-exceptions -fexceptions -fpascal-strings -fmax-type-align=16 -fcommon -fdiagnostics-show-note-include-stack -serialize-diagnostic-file /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/cmTC_4230c.build/Debug/Objects-normal/arm64/CMakeCXXCompilerABI.dia -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/cmTC_4230c.build/Debug/Objects-normal/arm64/CMakeCXXCompilerABI.o -x c++ /Applications/CMake.app/Contents/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx13.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=13.3 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +lse -target-feature +rdm -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +neon -target-feature +fp16fml -target-feature +ras -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -fallow-half-arguments-and-returns -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=lldb -target-linker-version 857.1 -v -fcoverage-compilation-dir=/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-h9hf8e -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.3 -dependency-file CMakeFiles/cmTC_98296.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_98296.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -stdlib=libc++ -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1 -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.3/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -fdebug-compilation-dir=/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-h9hf8e -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -no-opaque-pointers -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_98296.dir/CMakeCXXCompilerABI.cpp.o -x c++ /Applications/CMake.app/Contents/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [clang -cc1 version 14.0.3 (clang-1403.0.22.14.1) default target arm64-apple-darwin22.6.0]
-        ignore line: [ignoring nonexistent directory "/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/Debug/include"]
-        ignore line: [ignoring nonexistent directory "/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/cmTC_4230c.build/Debug/DerivedSources-normal/arm64"]
-        ignore line: [ignoring nonexistent directory "/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/cmTC_4230c.build/Debug/DerivedSources/arm64"]
-        ignore line: [ignoring nonexistent directory "/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/cmTC_4230c.build/Debug/DerivedSources"]
-        ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/local/include"]
-        ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/Library/Frameworks"]
+        ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/local/include"]
+        ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/Library/Frameworks"]
         ignore line: [#include "..." search starts here:]
         ignore line: [#include <...> search starts here:]
-        ignore line: [ /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/Debug (framework directory)]
-        ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1]
         ignore line: [ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.3/include]
-        ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include]
         ignore line: [ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
-        ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/System/Library/Frameworks (framework directory)]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/Library/Frameworks (framework directory)]
         ignore line: [End of search list.]
-        ignore line: []
-        ignore line: [Ld /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/Debug/cmTC_4230c normal (in target 'cmTC_4230c' from project 'CMAKE_TRY_COMPILE')]
-        ignore line: [    cd /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn]
-        ignore line: [    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -Xlinker -reproducible -target arm64-apple-macos13.3 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -L/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/EagerLinkingTBDs/Debug -L/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/Debug -F/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/EagerLinkingTBDs/Debug -F/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/Debug -filelist /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/cmTC_4230c.build/Debug/Objects-normal/arm64/cmTC_4230c.LinkFileList -Xlinker -no_deduplicate -v -Wl -v -Wl -search_paths_first -Wl -headerpad_max_install_names -Xlinker -dependency_info -Xlinker /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/cmTC_4230c.build/Debug/Objects-normal/arm64/cmTC_4230c_dependency_info.dat -o /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/Debug/cmTC_4230c]
+        ignore line: [Linking CXX executable cmTC_98296]
+        ignore line: [/Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_98296.dir/link.txt --verbose=1]
+        ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -Wl -search_paths_first -Wl -headerpad_max_install_names  -v -Wl -v CMakeFiles/cmTC_98296.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_98296 ]
         ignore line: [Apple clang version 14.0.3 (clang-1403.0.22.14.1)]
-        ignore line: [Target: arm64-apple-macos13.3]
+        ignore line: [Target: arm64-apple-darwin22.6.0]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
-        reduced line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 13.3.0 13.3 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/Debug/cmTC_4230c -L/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/EagerLinkingTBDs/Debug -L/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/Debug -reproducible -filelist /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/cmTC_4230c.build/Debug/Objects-normal/arm64/cmTC_4230c.LinkFileList -no_deduplicate -v -search_paths_first -headerpad_max_install_names -dependency_info /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/cmTC_4230c.build/Debug/Objects-normal/arm64/cmTC_4230c_dependency_info.dat -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.3/lib/darwin/libclang_rt.osx.a -F/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/EagerLinkingTBDs/Debug -F/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/Debug]
-                  to: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 13.3.0 13.3 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/Debug/cmTC_4230c -L/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/Debug -reproducible -filelist /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/cmTC_4230c.build/Debug/Objects-normal/arm64/cmTC_4230c.LinkFileList -no_deduplicate -v -search_paths_first -headerpad_max_install_names -dependency_info /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/cmTC_4230c.build/Debug/Objects-normal/arm64/cmTC_4230c_dependency_info.dat -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.3/lib/darwin/libclang_rt.osx.a -F/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/Debug]
-        link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 13.3.0 13.3 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/Debug/cmTC_4230c -L/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/Debug -reproducible -filelist /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/cmTC_4230c.build/Debug/Objects-normal/arm64/cmTC_4230c.LinkFileList -no_deduplicate -v -search_paths_first -headerpad_max_install_names -dependency_info /Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/cmTC_4230c.build/Debug/Objects-normal/arm64/cmTC_4230c_dependency_info.dat -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.3/lib/darwin/libclang_rt.osx.a -F/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/Debug]
+        link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 13.0.0 13.3 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -o cmTC_98296 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_98296.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.3/lib/darwin/libclang_rt.osx.a]
           arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
           arg [-demangle] ==> ignore
           arg [-lto_library] ==> ignore, skip following value
@@ -760,41 +376,29 @@ events:
           arg [arm64] ==> ignore
           arg [-platform_version] ==> ignore
           arg [macos] ==> ignore
-          arg [13.3.0] ==> ignore
+          arg [13.0.0] ==> ignore
           arg [13.3] ==> ignore
           arg [-syslibroot] ==> ignore
-          arg [/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk] ==> ignore
+          arg [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk] ==> ignore
           arg [-o] ==> ignore
-          arg [/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/Debug/cmTC_4230c] ==> ignore
-          arg [-L/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/Debug] ==> dir [/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/Debug]
-          arg [-reproducible] ==> ignore
-          arg [-filelist] ==> ignore
-          arg [/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/cmTC_4230c.build/Debug/Objects-normal/arm64/cmTC_4230c.LinkFileList] ==> ignore
-          arg [-no_deduplicate] ==> ignore
-          arg [-v] ==> ignore
+          arg [cmTC_98296] ==> ignore
           arg [-search_paths_first] ==> ignore
           arg [-headerpad_max_install_names] ==> ignore
-          arg [-dependency_info] ==> ignore
-          arg [/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/cmTC_4230c.build/Debug/Objects-normal/arm64/cmTC_4230c_dependency_info.dat] ==> ignore
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_98296.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lc++] ==> lib [c++]
           arg [-lSystem] ==> lib [System]
           arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.3/lib/darwin/libclang_rt.osx.a] ==> lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.3/lib/darwin/libclang_rt.osx.a]
-          arg [-F/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/Debug] ==> ignore
-        Library search paths: [;/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/EagerLinkingTBDs/Debug;/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/Debug;/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/lib]
-        Framework search paths: [;/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/EagerLinkingTBDs/Debug;/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/Debug;/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/]
+        Library search paths: [;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/lib]
+        Framework search paths: [;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/]
         remove lib [System]
         remove lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.3/lib/darwin/libclang_rt.osx.a]
-        collapse library dir [/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/Debug] ==> [/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/Debug], skipping non-system directory
-        collapse library dir [/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/EagerLinkingTBDs/Debug] ==> [/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/EagerLinkingTBDs/Debug], skipping non-system directory
-        collapse library dir [/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/Debug] ==> [/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/Debug], skipping non-system directory
-        collapse library dir [/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/lib] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/lib]
-        collapse framework dir [/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/EagerLinkingTBDs/Debug] ==> [/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/build/EagerLinkingTBDs/Debug], skipping non-system directory
-        collapse framework dir [/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/Debug] ==> [/Users/bentan/chessEngine/build/CMakeFiles/CMakeScratch/TryCompile-mOd9Sn/Debug], skipping non-system directory
-        collapse framework dir [/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/System/Library/Frameworks]
+        collapse library dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/lib] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/lib]
+        collapse framework dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/Library/Frameworks]
         implicit libs: [c++]
         implicit objs: []
-        implicit dirs: [/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/lib]
-        implicit fwks: [/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/System/Library/Frameworks]
+        implicit dirs: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/lib]
+        implicit fwks: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/Library/Frameworks]
       
       
 ...

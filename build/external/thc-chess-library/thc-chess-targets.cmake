@@ -19,7 +19,7 @@ set(CMAKE_IMPORT_FILE_VERSION 1)
 set(_cmake_targets_defined "")
 set(_cmake_targets_not_defined "")
 set(_cmake_expected_targets "")
-foreach(_cmake_expected_target IN ITEMS thc_chess)
+foreach(_cmake_expected_target IN ITEMS thc_chess_static)
   list(APPEND _cmake_expected_targets "${_cmake_expected_target}")
   if(TARGET "${_cmake_expected_target}")
     list(APPEND _cmake_targets_defined "${_cmake_expected_target}")
@@ -46,39 +46,18 @@ unset(_cmake_targets_not_defined)
 unset(_cmake_expected_targets)
 
 
-# Create imported target thc_chess
-add_library(thc_chess STATIC IMPORTED)
+# Create imported target thc_chess_static
+add_library(thc_chess_static STATIC IMPORTED)
 
-set_target_properties(thc_chess PROPERTIES
+set_target_properties(thc_chess_static PROPERTIES
   INTERFACE_INCLUDE_DIRECTORIES "/Users/bentan/chessEngine/external/thc-chess-library/src"
 )
 
-# Import target "thc_chess" for configuration "Debug"
-set_property(TARGET thc_chess APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
-set_target_properties(thc_chess PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/Users/bentan/chessEngine/build/external/thc-chess-library/Debug/libthc_chess.a"
-  )
-
-# Import target "thc_chess" for configuration "Release"
-set_property(TARGET thc_chess APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
-set_target_properties(thc_chess PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/Users/bentan/chessEngine/build/external/thc-chess-library/Release/libthc_chess.a"
-  )
-
-# Import target "thc_chess" for configuration "MinSizeRel"
-set_property(TARGET thc_chess APPEND PROPERTY IMPORTED_CONFIGURATIONS MINSIZEREL)
-set_target_properties(thc_chess PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_MINSIZEREL "CXX"
-  IMPORTED_LOCATION_MINSIZEREL "/Users/bentan/chessEngine/build/external/thc-chess-library/MinSizeRel/libthc_chess.a"
-  )
-
-# Import target "thc_chess" for configuration "RelWithDebInfo"
-set_property(TARGET thc_chess APPEND PROPERTY IMPORTED_CONFIGURATIONS RELWITHDEBINFO)
-set_target_properties(thc_chess PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELWITHDEBINFO "CXX"
-  IMPORTED_LOCATION_RELWITHDEBINFO "/Users/bentan/chessEngine/build/external/thc-chess-library/RelWithDebInfo/libthc_chess.a"
+# Import target "thc_chess_static" for configuration ""
+set_property(TARGET thc_chess_static APPEND PROPERTY IMPORTED_CONFIGURATIONS NOCONFIG)
+set_target_properties(thc_chess_static PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_NOCONFIG "CXX"
+  IMPORTED_LOCATION_NOCONFIG "/Users/bentan/chessEngine/build/external/thc-chess-library/libthc_chess_static.a"
   )
 
 # This file does not depend on other imported targets which have

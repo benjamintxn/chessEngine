@@ -1,10 +1,20 @@
-#include <iostream>
-using namespace std;
+#include <SFML/Graphics.hpp>
 
 int main() {
-
-    cout << "Hello, World!\n";
+    sf::RenderWindow window(sf::VideoMode(800, 600), "Chess Game");
+    
+    while (window.isOpen()) {
+        sf::Event event;
+        while (window.pollEvent(event)) {
+            if (event.type == sf::Event::Closed) {
+                window.close();
+            }
+        }
+        
+        window.clear();
+        // Draw chess board and pieces here...
+        window.display();
+    }
     
     return 0;
-    
 }
