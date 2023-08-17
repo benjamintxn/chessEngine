@@ -1,7 +1,0 @@
-Target dependency graph (3 targets)
-ZERO_CHECK in chessEngine, no dependencies
-thc_chess_static in chessEngine, depends on:
-ZERO_CHECK in chessEngine (explicit)
-chessEngine in chessEngine, depends on:
-ZERO_CHECK in chessEngine (explicit)
-thc_chess_static in chessEngine (explicit)

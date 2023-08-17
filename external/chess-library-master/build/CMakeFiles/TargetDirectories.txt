@@ -1,0 +1,4 @@
+/Users/bentan/chessEngine/external/chess-library-master/build/CMakeFiles/chess_library.dir
+/Users/bentan/chessEngine/external/chess-library-master/build/CMakeFiles/chess_library_tests.dir
+/Users/bentan/chessEngine/external/chess-library-master/build/CMakeFiles/ALL_BUILD.dir
+/Users/bentan/chessEngine/external/chess-library-master/build/CMakeFiles/ZERO_CHECK.dir

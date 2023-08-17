@@ -41,7 +41,7 @@ set(CMAKE_BINARY_DIR "/Users/bentan/chessEngine/build")
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/bentan/chessEngine/build/external/thc-chess-library/cmake_install.cmake")
+  include("/Users/bentan/chessEngine/build/external/chess-library-master/cmake_install.cmake")
 
 endif()
 

@@ -1,0 +1,65 @@
+{
+  "buildCommand" : {
+    "command" : "prepareForIndexing",
+    "enableIndexBuildArena" : false,
+    "targets" : null
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "7fdcf783f7007eec71ce917a24992c4a1ecfe6c27f7c1ad1596af1cb23652cde"
+    },
+    {
+      "guid" : "7fdcf783f7007eec71ce917a24992c4a7a1931db90fbe84f25f350a3e9e0419b"
+    },
+    {
+      "guid" : "7fdcf783f7007eec71ce917a24992c4ad309aeaa5e52e2115025102c19a935fb"
+    },
+    {
+      "guid" : "7fdcf783f7007eec71ce917a24992c4a905bff31bf232a8be81170fd0b4a58ee"
+    }
+  ],
+  "containerPath" : "/Users/bentan/chessEngine/external/chess-library-master/build/chess_library.xcodeproj",
+  "continueBuildingAfterErrors" : true,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "arm64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "macosx",
+      "sdk" : "macosx13.3",
+      "sdkVariant" : "macos",
+      "supportedArchitectures" : [
+        "arm64e",
+        "arm64",
+        "x86_64"
+      ],
+      "targetArchitecture" : "arm64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "",
+      "buildProductsPath" : "",
+      "derivedDataPath" : "/Users/bentan/Library/Developer/Xcode/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/bentan/Library/Developer/Xcode/DerivedData/chess_library-gwcdlrhnobrwyadqhthppqvsortp/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/bentan/Library/Developer/Xcode/DerivedData/chess_library-gwcdlrhnobrwyadqhthppqvsortp/Index.noindex/PrecompiledHeaders",
+      "pchPath" : ""
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO"
+        }
+      }
+    }
+  },
+  "qos" : "default",
+  "schemeCommand" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : true,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}
