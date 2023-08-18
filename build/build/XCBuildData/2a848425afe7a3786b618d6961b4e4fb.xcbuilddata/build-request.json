@@ -6,7 +6,7 @@
   },
   "configuredTargets" : [
     {
-      "guid" : "e70850fa8fe0f38f938e0106452cef972c902d94c9db02375992db3defbd5846"
+      "guid" : "e70850fa8fe0f38f938e0106452cef97e2591fedb0313fc375350b0dc8aef135"
     }
   ],
   "containerPath" : "/Users/bentan/chessEngine/build/chessEngine.xcodeproj",
@@ -46,9 +46,10 @@
       }
     }
   },
+  "qos" : "default",
   "schemeCommand" : "launch",
   "showNonLoggedProgress" : true,
-  "useDryRun" : false,
+  "useDryRun" : true,
   "useImplicitDependencies" : true,
   "useLegacyBuildLocations" : false,
   "useParallelTargets" : true

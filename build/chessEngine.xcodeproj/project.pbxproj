@@ -9,7 +9,7 @@
 /* Begin PBXAggregateTarget section */
 		26F6C68E27184CA8AB1E697D /* ZERO_CHECK */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = A52D87D394374D60A8A08722 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildConfigurationList = 6E1EEC3D1D0D427485D61212 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
 			buildPhases = (
 				313DB3361490FFB856C1687C /* Generate CMakeFiles/ZERO_CHECK */,
 			);
@@ -20,15 +20,15 @@
 		};
 		D5607D8F06EF4FB5B556937F /* ALL_BUILD */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 6D7B07FED8DD4537B32A05BF /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildConfigurationList = 0B0BEC4CF33642FABF86D45A /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
 			buildPhases = (
 				34C47EC39B57A646E708689D /* Generate CMakeFiles/ALL_BUILD */,
 			);
 			dependencies = (
-				0F6A206F02484B4ABE172A35 /* PBXTargetDependency */,
-				4830967C166C4231BA5B7C29 /* PBXTargetDependency */,
-				7F39F534A64F4B5EB5F6F5A6 /* PBXTargetDependency */,
-				A77DA65DF2834337B014087D /* PBXTargetDependency */,
+				D1751C3BFF8341A8A4194837 /* PBXTargetDependency */,
+				88149B42D609421E9CE3D5C0 /* PBXTargetDependency */,
+				6DC46DE04AD34769B32BA269 /* PBXTargetDependency */,
+				A52EBBAE6E3F410C984E62F5 /* PBXTargetDependency */,
 			);
 			name = ALL_BUILD;
 			productName = ALL_BUILD;
@@ -36,43 +36,43 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		182742BFCCB942018D86A0DB /* /Users/bentan/chessEngine/external/chess-library-master/src/chess.hpp */ = {isa = PBXBuildFile; fileRef = ED73C08862974B6A857D5FD0 /* /Users/bentan/chessEngine/external/chess-library-master/src/chess.hpp */; };
-		189CDC6703724683A7EA29C8 /* /Users/bentan/chessEngine/external/chess-library-master/src/main.cpp */ = {isa = PBXBuildFile; fileRef = 72C16969232046EEB8C26856 /* /Users/bentan/chessEngine/external/chess-library-master/src/main.cpp */; };
-		42D2013621754C9D8AA246B0 /* /Users/bentan/chessEngine/external/chess-library-master/tests/doctest/doctest.hpp */ = {isa = PBXBuildFile; fileRef = ABCB98172EAD40809E5B4FBB /* /Users/bentan/chessEngine/external/chess-library-master/tests/doctest/doctest.hpp */; };
-		639AA9239FF34F07833B24B1 /* /Users/bentan/chessEngine/external/chess-library-master/tests/hash.cpp */ = {isa = PBXBuildFile; fileRef = 91000BF6723D476CAF62B86F /* /Users/bentan/chessEngine/external/chess-library-master/tests/hash.cpp */; };
-		716DB0A1DB6D4B08A3060C6B /* /Users/bentan/chessEngine/external/chess-library-master/tests/perft.cpp */ = {isa = PBXBuildFile; fileRef = F054B16A5726460E95B86B66 /* /Users/bentan/chessEngine/external/chess-library-master/tests/perft.cpp */; };
-		87B3CC9C2F9E4598A43E02B0 /* /Users/bentan/chessEngine/external/chess-library-master/tests/main.cpp */ = {isa = PBXBuildFile; fileRef = AF6B62BCB87E4E93B596DBAF /* /Users/bentan/chessEngine/external/chess-library-master/tests/main.cpp */; };
-		A02FD4974C9748549E50361F /* /Users/bentan/chessEngine/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = CEA27D71D474496FA6DBA6E7 /* /Users/bentan/chessEngine/CMakeLists.txt */; };
-		B62BDCC171364B2FB9BA08A0 /* /Users/bentan/chessEngine/external/chess-library-master/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 45319FC529F941D98225A0DC /* /Users/bentan/chessEngine/external/chess-library-master/CMakeLists.txt */; };
-		B8688CD8DA994EB0BFFF5C7A /* /Users/bentan/chessEngine/external/chess-library-master/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = A310124C5BBE4E31B1052B51 /* /Users/bentan/chessEngine/external/chess-library-master/CMakeLists.txt */; };
-		C38841A8F8D045D9B2030A87 /* /Users/bentan/chessEngine/src/functionality.hpp */ = {isa = PBXBuildFile; fileRef = 9F0F1613A4A94015B44847DA /* /Users/bentan/chessEngine/src/functionality.hpp */; };
-		DBB3DFFEC63647598F49586B /* /Users/bentan/chessEngine/external/chess-library-master/tests/san.cpp */ = {isa = PBXBuildFile; fileRef = DAB4A896D1C24F29A365C3FB /* /Users/bentan/chessEngine/external/chess-library-master/tests/san.cpp */; };
-		FBB320C77F02402AB6072041 /* /Users/bentan/chessEngine/src/main.cpp */ = {isa = PBXBuildFile; fileRef = 31E1C690D3B04A218AABD866 /* /Users/bentan/chessEngine/src/main.cpp */; };
+		020996B2FE0845B8B24F4ED5 /* /Users/bentan/chessEngine/external/chess-library-master/src/main.cpp */ = {isa = PBXBuildFile; fileRef = D11D7C212AD04FFFAC418104 /* /Users/bentan/chessEngine/external/chess-library-master/src/main.cpp */; };
+		030CC81960234DDFB61BABFD /* /Users/bentan/chessEngine/src/main.cpp */ = {isa = PBXBuildFile; fileRef = 6D06BA36FA724FD696A138D3 /* /Users/bentan/chessEngine/src/main.cpp */; };
+		06D71F9B0F214B9884BACED6 /* /Users/bentan/chessEngine/external/chess-library-master/tests/san.cpp */ = {isa = PBXBuildFile; fileRef = 395324689ECB4C8E968764F4 /* /Users/bentan/chessEngine/external/chess-library-master/tests/san.cpp */; };
+		229654DC3131435DA416AA5F /* /Users/bentan/chessEngine/external/chess-library-master/tests/doctest/doctest.hpp */ = {isa = PBXBuildFile; fileRef = A15999DEADEE46EE9E60F6AF /* /Users/bentan/chessEngine/external/chess-library-master/tests/doctest/doctest.hpp */; };
+		3A041A1858284A13BB6B96B2 /* /Users/bentan/chessEngine/external/chess-library-master/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = FBC04072CB3E421B903EB1CB /* /Users/bentan/chessEngine/external/chess-library-master/CMakeLists.txt */; };
+		4D07175D271E480498D85143 /* /Users/bentan/chessEngine/src/functionality.hpp */ = {isa = PBXBuildFile; fileRef = 83C77227F9A944EC9DDB4FD2 /* /Users/bentan/chessEngine/src/functionality.hpp */; };
+		74981B844E5349158F490454 /* /Users/bentan/chessEngine/external/chess-library-master/src/chess.hpp */ = {isa = PBXBuildFile; fileRef = 7BAB55FBD19144BB85C0CE9D /* /Users/bentan/chessEngine/external/chess-library-master/src/chess.hpp */; };
+		76DE67C1D28340FCBC910888 /* /Users/bentan/chessEngine/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 9D84A9D173AC49C8BC4B1F36 /* /Users/bentan/chessEngine/CMakeLists.txt */; };
+		C338DCDB3F4F4FECA0ABD74E /* /Users/bentan/chessEngine/external/chess-library-master/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = ED8DDBE9B43F4D2FA03DB7B3 /* /Users/bentan/chessEngine/external/chess-library-master/CMakeLists.txt */; };
+		D609ACCDE5AB419C9A4F1B8A /* /Users/bentan/chessEngine/external/chess-library-master/tests/hash.cpp */ = {isa = PBXBuildFile; fileRef = 6CA51F1AC117495C804DA722 /* /Users/bentan/chessEngine/external/chess-library-master/tests/hash.cpp */; };
+		D85D0C0F0A9D4F7E90CDBA00 /* /Users/bentan/chessEngine/external/chess-library-master/tests/perft.cpp */ = {isa = PBXBuildFile; fileRef = AE862C988F004F3F84B7CFB2 /* /Users/bentan/chessEngine/external/chess-library-master/tests/perft.cpp */; };
+		E6FD97ECF0BB485891D3BBC2 /* /Users/bentan/chessEngine/external/chess-library-master/tests/main.cpp */ = {isa = PBXBuildFile; fileRef = 4864B1E4B2454ABC8A1D069B /* /Users/bentan/chessEngine/external/chess-library-master/tests/main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildStyle section */
-		0608B6A405BD4B1D8D4136BB /* MinSizeRel */ = {
+		75C6405F3C9A474290479B27 /* MinSizeRel */ = {
 			isa = PBXBuildStyle;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 			};
 			name = MinSizeRel;
 		};
-		B32A7F5C78EE424FBD0D40BB /* RelWithDebInfo */ = {
+		A6B4161FB8C84A599405CFE6 /* RelWithDebInfo */ = {
 			isa = PBXBuildStyle;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 			};
 			name = RelWithDebInfo;
 		};
-		D389AC35CCE34268A8D9E4B7 /* Release */ = {
+		B6190C2AF30241FEAD34C1EC /* Release */ = {
 			isa = PBXBuildStyle;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 			};
 			name = Release;
 		};
-		FBD9D2DD488E47279186CF0D /* Debug */ = {
+		F385213C0E8D42EB9C4616E4 /* Debug */ = {
 			isa = PBXBuildStyle;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
@@ -82,92 +82,92 @@
 /* End PBXBuildStyle section */
 
 /* Begin PBXContainerItemProxy section */
-		18BD3A48C2194EE5A9E8EE70 /* PBXContainerItemProxy */ = {
+		085B9D96BEE64EA0AEC84480 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0D2B2CE41824BECAC954006 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4E6E75DC5D64BF39F523B83;
+			remoteInfo = chess_library;
+		};
+		17E6137FB50340128D3808C4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C0D2B2CE41824BECAC954006 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 9540CF18B147426382617649;
 			remoteInfo = chess_library_tests;
 		};
-		219460C9E6474D2FA75AD3D0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C0D2B2CE41824BECAC954006 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 26F6C68E27184CA8AB1E697D;
-			remoteInfo = ZERO_CHECK;
-		};
-		2F7C18BBC82E4AD18B65A995 /* PBXContainerItemProxy */ = {
+		3F53A805F9AF4C3F90786D80 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C0D2B2CE41824BECAC954006 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = D4E6E75DC5D64BF39F523B83;
 			remoteInfo = chess_library;
 		};
-		36D2C8E0E0424F788A63C44E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C0D2B2CE41824BECAC954006 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D4E6E75DC5D64BF39F523B83;
-			remoteInfo = chess_library;
-		};
-		706B3F27C53F4E4ABF9953A2 /* PBXContainerItemProxy */ = {
+		B3F2B17B09D440EE8EF993F8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C0D2B2CE41824BECAC954006 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 5BDB6D8EC9F0441DA7221102;
 			remoteInfo = chessEngine;
 		};
-		9848D4DCBEE64E8FBF01BBB6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C0D2B2CE41824BECAC954006 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 26F6C68E27184CA8AB1E697D;
-			remoteInfo = ZERO_CHECK;
-		};
-		DC4D4257159044C684B398AB /* PBXContainerItemProxy */ = {
+		C7534C7C65AE406D839F2364 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C0D2B2CE41824BECAC954006 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = D4E6E75DC5D64BF39F523B83;
 			remoteInfo = chess_library;
 		};
+		F136E896F81F49D59F0D4802 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0D2B2CE41824BECAC954006 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26F6C68E27184CA8AB1E697D;
+			remoteInfo = ZERO_CHECK;
+		};
+		FC5B12BB13C241438CEE647D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0D2B2CE41824BECAC954006 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26F6C68E27184CA8AB1E697D;
+			remoteInfo = ZERO_CHECK;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		31E1C690D3B04A218AABD866 /* /Users/bentan/chessEngine/src/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
-		45319FC529F941D98225A0DC /* /Users/bentan/chessEngine/external/chess-library-master/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = "external/chess-library-master/CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
-		6329768A4E1042B3AD82A31D /* chess_library */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libchess_library.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		72C16969232046EEB8C26856 /* /Users/bentan/chessEngine/external/chess-library-master/src/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = "external/chess-library-master/src/main.cpp"; sourceTree = SOURCE_ROOT; };
-		79A9236F567741EF8E82CA89 /* /Users/bentan/chessEngine/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		91000BF6723D476CAF62B86F /* /Users/bentan/chessEngine/external/chess-library-master/tests/hash.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = hash.cpp; path = "external/chess-library-master/tests/hash.cpp"; sourceTree = SOURCE_ROOT; };
-		9F0F1613A4A94015B44847DA /* /Users/bentan/chessEngine/src/functionality.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = functionality.hpp; path = src/functionality.hpp; sourceTree = SOURCE_ROOT; };
-		A310124C5BBE4E31B1052B51 /* /Users/bentan/chessEngine/external/chess-library-master/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = "external/chess-library-master/CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
-		ABCB98172EAD40809E5B4FBB /* /Users/bentan/chessEngine/external/chess-library-master/tests/doctest/doctest.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = doctest.hpp; path = "external/chess-library-master/tests/doctest/doctest.hpp"; sourceTree = SOURCE_ROOT; };
-		AF6B62BCB87E4E93B596DBAF /* /Users/bentan/chessEngine/external/chess-library-master/tests/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = "external/chess-library-master/tests/main.cpp"; sourceTree = SOURCE_ROOT; };
-		C11B9D5959934524B8205706 /* chess_library_tests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = chess_library_tests; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEA27D71D474496FA6DBA6E7 /* /Users/bentan/chessEngine/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		DAB4A896D1C24F29A365C3FB /* /Users/bentan/chessEngine/external/chess-library-master/tests/san.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = san.cpp; path = "external/chess-library-master/tests/san.cpp"; sourceTree = SOURCE_ROOT; };
-		ED73C08862974B6A857D5FD0 /* /Users/bentan/chessEngine/external/chess-library-master/src/chess.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = chess.hpp; path = "external/chess-library-master/src/chess.hpp"; sourceTree = SOURCE_ROOT; };
-		F054B16A5726460E95B86B66 /* /Users/bentan/chessEngine/external/chess-library-master/tests/perft.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = perft.cpp; path = "external/chess-library-master/tests/perft.cpp"; sourceTree = SOURCE_ROOT; };
-		FBE7D71079DD4989AEED404A /* chessEngine */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = chessEngine; sourceTree = BUILT_PRODUCTS_DIR; };
+		395324689ECB4C8E968764F4 /* /Users/bentan/chessEngine/external/chess-library-master/tests/san.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = san.cpp; path = "external/chess-library-master/tests/san.cpp"; sourceTree = SOURCE_ROOT; };
+		4864B1E4B2454ABC8A1D069B /* /Users/bentan/chessEngine/external/chess-library-master/tests/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = "external/chess-library-master/tests/main.cpp"; sourceTree = SOURCE_ROOT; };
+		5597006887D44E6F8F052936 /* chessEngine */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = chessEngine; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CA51F1AC117495C804DA722 /* /Users/bentan/chessEngine/external/chess-library-master/tests/hash.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = hash.cpp; path = "external/chess-library-master/tests/hash.cpp"; sourceTree = SOURCE_ROOT; };
+		6D06BA36FA724FD696A138D3 /* /Users/bentan/chessEngine/src/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+		708C73FE97D84951A482C0D1 /* chess_library */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libchess_library.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BAB55FBD19144BB85C0CE9D /* /Users/bentan/chessEngine/external/chess-library-master/src/chess.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = chess.hpp; path = "external/chess-library-master/src/chess.hpp"; sourceTree = SOURCE_ROOT; };
+		83C77227F9A944EC9DDB4FD2 /* /Users/bentan/chessEngine/src/functionality.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = functionality.hpp; path = src/functionality.hpp; sourceTree = SOURCE_ROOT; };
+		9D84A9D173AC49C8BC4B1F36 /* /Users/bentan/chessEngine/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		A15999DEADEE46EE9E60F6AF /* /Users/bentan/chessEngine/external/chess-library-master/tests/doctest/doctest.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = doctest.hpp; path = "external/chess-library-master/tests/doctest/doctest.hpp"; sourceTree = SOURCE_ROOT; };
+		AE862C988F004F3F84B7CFB2 /* /Users/bentan/chessEngine/external/chess-library-master/tests/perft.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = perft.cpp; path = "external/chess-library-master/tests/perft.cpp"; sourceTree = SOURCE_ROOT; };
+		C361B28305F34756852BA60F /* chess_library_tests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = chess_library_tests; sourceTree = BUILT_PRODUCTS_DIR; };
+		D11D7C212AD04FFFAC418104 /* /Users/bentan/chessEngine/external/chess-library-master/src/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = "external/chess-library-master/src/main.cpp"; sourceTree = SOURCE_ROOT; };
+		E00E23D336B04875846D682C /* /Users/bentan/chessEngine/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		ED8DDBE9B43F4D2FA03DB7B3 /* /Users/bentan/chessEngine/external/chess-library-master/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = "external/chess-library-master/CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+		FBC04072CB3E421B903EB1CB /* /Users/bentan/chessEngine/external/chess-library-master/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = "external/chess-library-master/CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6459967DF3244B459696BE60 /* Frameworks */ = {
+		0D48E16C0F6F49ADA9B3A594 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A08AAEBF25644021901241F5 /* Frameworks */ = {
+		36420E4C061D4E379E24FEDD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D092F41D8D8B4BC5A43EC231 /* Frameworks */ = {
+		AA7C2CBE8D9F413BABBB6FD7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -177,130 +177,130 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		04C028A32861459FB6EEEAEB /* ALL_BUILD */ = {
+		01B70ED0449B4861AA76FF17 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8FEBE518EC0F48D3BBED9539 /* CMake Rules */,
-				79A9236F567741EF8E82CA89 /* /Users/bentan/chessEngine/CMakeLists.txt */,
+				5597006887D44E6F8F052936 /* chessEngine */,
+				708C73FE97D84951A482C0D1 /* chess_library */,
+				C361B28305F34756852BA60F /* chess_library_tests */,
 			);
-			name = ALL_BUILD;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		18209C9FB355470487534A5E /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		38CBC82A9A474F0D92BD0D88 /* Header Files */ = {
-			isa = PBXGroup;
-			children = (
-				ED73C08862974B6A857D5FD0 /* /Users/bentan/chessEngine/external/chess-library-master/src/chess.hpp */,
-			);
-			name = "Header Files";
-			sourceTree = "<group>";
-		};
-		45FC7037868644708E70D715 /* Source Files */ = {
-			isa = PBXGroup;
-			children = (
-				91000BF6723D476CAF62B86F /* /Users/bentan/chessEngine/external/chess-library-master/tests/hash.cpp */,
-				AF6B62BCB87E4E93B596DBAF /* /Users/bentan/chessEngine/external/chess-library-master/tests/main.cpp */,
-				F054B16A5726460E95B86B66 /* /Users/bentan/chessEngine/external/chess-library-master/tests/perft.cpp */,
-				DAB4A896D1C24F29A365C3FB /* /Users/bentan/chessEngine/external/chess-library-master/tests/san.cpp */,
-			);
-			name = "Source Files";
-			sourceTree = "<group>";
-		};
-		4D76242F9C394C478B01B547 /* Header Files */ = {
-			isa = PBXGroup;
-			children = (
-				9F0F1613A4A94015B44847DA /* /Users/bentan/chessEngine/src/functionality.hpp */,
-			);
-			name = "Header Files";
-			sourceTree = "<group>";
-		};
-		555B57B65C0746268A9124C3 /* Header Files */ = {
-			isa = PBXGroup;
-			children = (
-				ABCB98172EAD40809E5B4FBB /* /Users/bentan/chessEngine/external/chess-library-master/tests/doctest/doctest.hpp */,
-			);
-			name = "Header Files";
-			sourceTree = "<group>";
-		};
-		83AFD6D9CC324F06A14CC2AD /* Source Files */ = {
-			isa = PBXGroup;
-			children = (
-				72C16969232046EEB8C26856 /* /Users/bentan/chessEngine/external/chess-library-master/src/main.cpp */,
-			);
-			name = "Source Files";
-			sourceTree = "<group>";
-		};
-		8E22C9FC4E0740ECB49BD1EB /* chess_library_tests */ = {
-			isa = PBXGroup;
-			children = (
-				555B57B65C0746268A9124C3 /* Header Files */,
-				45FC7037868644708E70D715 /* Source Files */,
-				A310124C5BBE4E31B1052B51 /* /Users/bentan/chessEngine/external/chess-library-master/CMakeLists.txt */,
-			);
-			name = chess_library_tests;
-			sourceTree = "<group>";
-		};
-		8FEBE518EC0F48D3BBED9539 /* CMake Rules */ = {
+		0B4BF5EE9FD740E580C4990E /* CMake Rules */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = "CMake Rules";
 			sourceTree = "<group>";
 		};
-		9534694F6F8C438286D05C83 /* chessEngine */ = {
+		159183253EE2444A96D63962 = {
 			isa = PBXGroup;
 			children = (
-				D1EAE6E750BA41D4B40A2B98 /* Source Files */,
-				4D76242F9C394C478B01B547 /* Header Files */,
-				CEA27D71D474496FA6DBA6E7 /* /Users/bentan/chessEngine/CMakeLists.txt */,
+				BF7F8FA4D59E4F67ABAC8F22 /* chessEngine */,
+				E61FE15518B24783BF317B9C /* ALL_BUILD */,
+				B9E1EBF967074EFEA9C7CD1F /* chess_library */,
+				527C7F2AED404D70B7522B00 /* chess_library_tests */,
+				01B70ED0449B4861AA76FF17 /* Products */,
+				60A509E37A434E418B217A1C /* Frameworks */,
 			);
-			name = chessEngine;
 			sourceTree = "<group>";
 		};
-		D0F849C43A3C4F60B987E131 /* Products */ = {
+		1641551ED00341388E3DC689 /* Header Files */ = {
 			isa = PBXGroup;
 			children = (
-				FBE7D71079DD4989AEED404A /* chessEngine */,
-				6329768A4E1042B3AD82A31D /* chess_library */,
-				C11B9D5959934524B8205706 /* chess_library_tests */,
+				7BAB55FBD19144BB85C0CE9D /* /Users/bentan/chessEngine/external/chess-library-master/src/chess.hpp */,
 			);
-			name = Products;
+			name = "Header Files";
 			sourceTree = "<group>";
 		};
-		D1EAE6E750BA41D4B40A2B98 /* Source Files */ = {
+		527C7F2AED404D70B7522B00 /* chess_library_tests */ = {
 			isa = PBXGroup;
 			children = (
-				31E1C690D3B04A218AABD866 /* /Users/bentan/chessEngine/src/main.cpp */,
+				E1BE7672E2F94A798F1647CA /* Header Files */,
+				5DDE40689B48445792AFBC47 /* Source Files */,
+				FBC04072CB3E421B903EB1CB /* /Users/bentan/chessEngine/external/chess-library-master/CMakeLists.txt */,
+			);
+			name = chess_library_tests;
+			sourceTree = "<group>";
+		};
+		5DDE40689B48445792AFBC47 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				6CA51F1AC117495C804DA722 /* /Users/bentan/chessEngine/external/chess-library-master/tests/hash.cpp */,
+				4864B1E4B2454ABC8A1D069B /* /Users/bentan/chessEngine/external/chess-library-master/tests/main.cpp */,
+				AE862C988F004F3F84B7CFB2 /* /Users/bentan/chessEngine/external/chess-library-master/tests/perft.cpp */,
+				395324689ECB4C8E968764F4 /* /Users/bentan/chessEngine/external/chess-library-master/tests/san.cpp */,
 			);
 			name = "Source Files";
 			sourceTree = "<group>";
 		};
-		DCFA3F30523B4506BB746E5D = {
+		60A509E37A434E418B217A1C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9534694F6F8C438286D05C83 /* chessEngine */,
-				04C028A32861459FB6EEEAEB /* ALL_BUILD */,
-				EF29F4A0839E492D99BFD510 /* chess_library */,
-				8E22C9FC4E0740ECB49BD1EB /* chess_library_tests */,
-				D0F849C43A3C4F60B987E131 /* Products */,
-				18209C9FB355470487534A5E /* Frameworks */,
 			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		EF29F4A0839E492D99BFD510 /* chess_library */ = {
+		B9E1EBF967074EFEA9C7CD1F /* chess_library */ = {
 			isa = PBXGroup;
 			children = (
-				38CBC82A9A474F0D92BD0D88 /* Header Files */,
-				83AFD6D9CC324F06A14CC2AD /* Source Files */,
-				45319FC529F941D98225A0DC /* /Users/bentan/chessEngine/external/chess-library-master/CMakeLists.txt */,
+				1641551ED00341388E3DC689 /* Header Files */,
+				C2141F9720E3437C9B970A1E /* Source Files */,
+				ED8DDBE9B43F4D2FA03DB7B3 /* /Users/bentan/chessEngine/external/chess-library-master/CMakeLists.txt */,
 			);
 			name = chess_library;
+			sourceTree = "<group>";
+		};
+		BF7F8FA4D59E4F67ABAC8F22 /* chessEngine */ = {
+			isa = PBXGroup;
+			children = (
+				F4C04AB2C85C4BA8AB227788 /* Source Files */,
+				EC6E4B225D854A5DAF6F9A8E /* Header Files */,
+				9D84A9D173AC49C8BC4B1F36 /* /Users/bentan/chessEngine/CMakeLists.txt */,
+			);
+			name = chessEngine;
+			sourceTree = "<group>";
+		};
+		C2141F9720E3437C9B970A1E /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				D11D7C212AD04FFFAC418104 /* /Users/bentan/chessEngine/external/chess-library-master/src/main.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		E1BE7672E2F94A798F1647CA /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				A15999DEADEE46EE9E60F6AF /* /Users/bentan/chessEngine/external/chess-library-master/tests/doctest/doctest.hpp */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		E61FE15518B24783BF317B9C /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				0B4BF5EE9FD740E580C4990E /* CMake Rules */,
+				E00E23D336B04875846D682C /* /Users/bentan/chessEngine/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		EC6E4B225D854A5DAF6F9A8E /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				83C77227F9A944EC9DDB4FD2 /* /Users/bentan/chessEngine/src/functionality.hpp */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		F4C04AB2C85C4BA8AB227788 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				6D06BA36FA724FD696A138D3 /* /Users/bentan/chessEngine/src/main.cpp */,
+			);
+			name = "Source Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,45 +308,45 @@
 /* Begin PBXNativeTarget section */
 		5BDB6D8EC9F0441DA7221102 /* chessEngine */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4523E469A7854F2F9032C3B4 /* Build configuration list for PBXNativeTarget "chessEngine" */;
+			buildConfigurationList = 8A8B0B5FBE53433A80F147A1 /* Build configuration list for PBXNativeTarget "chessEngine" */;
 			buildPhases = (
-				6DCAD080CCF44E11AE90D704 /* Sources */,
-				A08AAEBF25644021901241F5 /* Frameworks */,
+				4F626AFE76A7442495EA843F /* Sources */,
+				AA7C2CBE8D9F413BABBB6FD7 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F419C20FBB9E46EC9E812F6E /* PBXTargetDependency */,
-				E7C22083AEB941A0A6F7B249 /* PBXTargetDependency */,
+				A09DB7A3039143BFB880BB32 /* PBXTargetDependency */,
+				7B129C25DB1D4E2292D95463 /* PBXTargetDependency */,
 			);
 			name = chessEngine;
 			productName = chessEngine;
-			productReference = FBE7D71079DD4989AEED404A /* chessEngine */;
+			productReference = 5597006887D44E6F8F052936 /* chessEngine */;
 			productType = "com.apple.product-type.tool";
 		};
 		9540CF18B147426382617649 /* chess_library_tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8DA1DB465262448FB0E56608 /* Build configuration list for PBXNativeTarget "chess_library_tests" */;
+			buildConfigurationList = C3832026CC16408FA54DCAB9 /* Build configuration list for PBXNativeTarget "chess_library_tests" */;
 			buildPhases = (
-				A970827544814D2CA35DB91A /* Sources */,
-				D092F41D8D8B4BC5A43EC231 /* Frameworks */,
+				6A5BCA369C76415A8E0E285E /* Sources */,
+				0D48E16C0F6F49ADA9B3A594 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9A22CCA81BCC47FF86841641 /* PBXTargetDependency */,
+				19BD6EF2BA5A47A0941D114A /* PBXTargetDependency */,
 			);
 			name = chess_library_tests;
 			productName = chess_library_tests;
-			productReference = C11B9D5959934524B8205706 /* chess_library_tests */;
+			productReference = C361B28305F34756852BA60F /* chess_library_tests */;
 			productType = "com.apple.product-type.tool";
 		};
 		D4E6E75DC5D64BF39F523B83 /* chess_library */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F3C51AFD136E42B0A58462AF /* Build configuration list for PBXNativeTarget "chess_library" */;
+			buildConfigurationList = 2603105CE4B045EA97947F35 /* Build configuration list for PBXNativeTarget "chess_library" */;
 			buildPhases = (
-				223B7738139A476FAE6EE2F3 /* Sources */,
-				6459967DF3244B459696BE60 /* Frameworks */,
+				249D9AEECA7B4BE08416321D /* Sources */,
+				36420E4C061D4E379E24FEDD /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -354,7 +354,7 @@
 			);
 			name = chess_library;
 			productName = chess_library;
-			productReference = 6329768A4E1042B3AD82A31D /* chess_library */;
+			productReference = 708C73FE97D84951A482C0D1 /* chess_library */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -366,18 +366,18 @@
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1430;
 			};
-			buildConfigurationList = E4D7A7B321504A55A0E75869 /* Build configuration list for PBXProject "chessEngine" */;
+			buildConfigurationList = CECAD6837B064606B0781381 /* Build configuration list for PBXProject "chessEngine" */;
 			buildSettings = {
 			};
 			buildStyles = (
-				FBD9D2DD488E47279186CF0D /* Debug */,
-				D389AC35CCE34268A8D9E4B7 /* Release */,
-				0608B6A405BD4B1D8D4136BB /* MinSizeRel */,
-				B32A7F5C78EE424FBD0D40BB /* RelWithDebInfo */,
+				F385213C0E8D42EB9C4616E4 /* Debug */,
+				B6190C2AF30241FEAD34C1EC /* Release */,
+				75C6405F3C9A474290479B27 /* MinSizeRel */,
+				A6B4161FB8C84A599405CFE6 /* RelWithDebInfo */,
 			);
 			compatibilityVersion = "Xcode 3.2";
 			hasScannedForEncodings = 0;
-			mainGroup = DCFA3F30523B4506BB746E5D;
+			mainGroup = 159183253EE2444A96D63962;
 			projectDirPath = /Users/bentan/chessEngine;
 			projectRoot = "";
 			targets = (
@@ -490,75 +490,75 @@ exit 0";
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		223B7738139A476FAE6EE2F3 /* Sources */ = {
+		249D9AEECA7B4BE08416321D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				189CDC6703724683A7EA29C8 /* /Users/bentan/chessEngine/external/chess-library-master/src/main.cpp */,
+				020996B2FE0845B8B24F4ED5 /* /Users/bentan/chessEngine/external/chess-library-master/src/main.cpp */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6DCAD080CCF44E11AE90D704 /* Sources */ = {
+		4F626AFE76A7442495EA843F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBB320C77F02402AB6072041 /* /Users/bentan/chessEngine/src/main.cpp */,
+				030CC81960234DDFB61BABFD /* /Users/bentan/chessEngine/src/main.cpp */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A970827544814D2CA35DB91A /* Sources */ = {
+		6A5BCA369C76415A8E0E285E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				639AA9239FF34F07833B24B1 /* /Users/bentan/chessEngine/external/chess-library-master/tests/hash.cpp */,
-				87B3CC9C2F9E4598A43E02B0 /* /Users/bentan/chessEngine/external/chess-library-master/tests/main.cpp */,
-				716DB0A1DB6D4B08A3060C6B /* /Users/bentan/chessEngine/external/chess-library-master/tests/perft.cpp */,
-				DBB3DFFEC63647598F49586B /* /Users/bentan/chessEngine/external/chess-library-master/tests/san.cpp */,
+				D609ACCDE5AB419C9A4F1B8A /* /Users/bentan/chessEngine/external/chess-library-master/tests/hash.cpp */,
+				E6FD97ECF0BB485891D3BBC2 /* /Users/bentan/chessEngine/external/chess-library-master/tests/main.cpp */,
+				D85D0C0F0A9D4F7E90CDBA00 /* /Users/bentan/chessEngine/external/chess-library-master/tests/perft.cpp */,
+				06D71F9B0F214B9884BACED6 /* /Users/bentan/chessEngine/external/chess-library-master/tests/san.cpp */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0F6A206F02484B4ABE172A35 /* PBXTargetDependency */ = {
+		19BD6EF2BA5A47A0941D114A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4E6E75DC5D64BF39F523B83 /* chess_library */;
+			targetProxy = 3F53A805F9AF4C3F90786D80 /* PBXContainerItemProxy */;
+		};
+		6DC46DE04AD34769B32BA269 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4E6E75DC5D64BF39F523B83 /* chess_library */;
+			targetProxy = C7534C7C65AE406D839F2364 /* PBXContainerItemProxy */;
+		};
+		7B129C25DB1D4E2292D95463 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4E6E75DC5D64BF39F523B83 /* chess_library */;
+			targetProxy = 085B9D96BEE64EA0AEC84480 /* PBXContainerItemProxy */;
+		};
+		88149B42D609421E9CE3D5C0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 26F6C68E27184CA8AB1E697D /* ZERO_CHECK */;
-			targetProxy = 9848D4DCBEE64E8FBF01BBB6 /* PBXContainerItemProxy */;
+			targetProxy = F136E896F81F49D59F0D4802 /* PBXContainerItemProxy */;
 		};
-		4830967C166C4231BA5B7C29 /* PBXTargetDependency */ = {
+		A09DB7A3039143BFB880BB32 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5BDB6D8EC9F0441DA7221102 /* chessEngine */;
-			targetProxy = 706B3F27C53F4E4ABF9953A2 /* PBXContainerItemProxy */;
+			target = 26F6C68E27184CA8AB1E697D /* ZERO_CHECK */;
+			targetProxy = FC5B12BB13C241438CEE647D /* PBXContainerItemProxy */;
 		};
-		7F39F534A64F4B5EB5F6F5A6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D4E6E75DC5D64BF39F523B83 /* chess_library */;
-			targetProxy = 2F7C18BBC82E4AD18B65A995 /* PBXContainerItemProxy */;
-		};
-		9A22CCA81BCC47FF86841641 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D4E6E75DC5D64BF39F523B83 /* chess_library */;
-			targetProxy = 36D2C8E0E0424F788A63C44E /* PBXContainerItemProxy */;
-		};
-		A77DA65DF2834337B014087D /* PBXTargetDependency */ = {
+		A52EBBAE6E3F410C984E62F5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 9540CF18B147426382617649 /* chess_library_tests */;
-			targetProxy = 18BD3A48C2194EE5A9E8EE70 /* PBXContainerItemProxy */;
+			targetProxy = 17E6137FB50340128D3808C4 /* PBXContainerItemProxy */;
 		};
-		E7C22083AEB941A0A6F7B249 /* PBXTargetDependency */ = {
+		D1751C3BFF8341A8A4194837 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D4E6E75DC5D64BF39F523B83 /* chess_library */;
-			targetProxy = DC4D4257159044C684B398AB /* PBXContainerItemProxy */;
-		};
-		F419C20FBB9E46EC9E812F6E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 26F6C68E27184CA8AB1E697D /* ZERO_CHECK */;
-			targetProxy = 219460C9E6474D2FA75AD3D0 /* PBXContainerItemProxy */;
+			target = 5BDB6D8EC9F0441DA7221102 /* chessEngine */;
+			targetProxy = B3F2B17B09D440EE8EF993F8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		07DE235037CE47DE87AF035D /* Release */ = {
+		004AD8A231FB402CB5D26DBF /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -578,51 +578,71 @@ exit 0";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("$(inherited)");
 			};
-			name = Release;
+			name = RelWithDebInfo;
 		};
-		18CF92CACC8D4918A782F865 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = arm64;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk;
-				SYMROOT = /Users/bentan/chessEngine/build/build;
-			};
-			name = Debug;
-		};
-		1D90D946D0A24C5D9E5E5643 /* RelWithDebInfo */ = {
+		07F0AD1085914D879742DB8A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = arm64;
 				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/bentan/chessEngine/build/external/chess-library-master/RelWithDebInfo";
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/bentan/chessEngine/build/external/chess-library-master/Release";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=gnu++17' ";
-				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/bentan/chessEngine/build/external/chess-library-master/RelWithDebInfo/libchess_library.a","$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' ";
+				OTHER_LIBTOOLFLAGS = ("");
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = chess_library_tests;
+				PRODUCT_NAME = chess_library;
 				SECTORDER_FLAGS = "";
-				TARGET_TEMP_DIR = "/Users/bentan/chessEngine/build/build/chess_library_tests.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				TARGET_TEMP_DIR = "/Users/bentan/chessEngine/build/build/chess_library.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("$(inherited)");
 			};
-			name = RelWithDebInfo;
+			name = Release;
 		};
-		22C1F31CDD2C454AB3A8DF0C /* MinSizeRel */ = {
+		0AB2CF6D2E9C4D0AB69B05CA /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = arm64;
 				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = /Users/bentan/chessEngine/build/MinSizeRel;
+				CONFIGURATION_BUILD_DIR = "/Users/bentan/chessEngine/build/external/chess-library-master/MinSizeRel";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = chess_library;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/bentan/chessEngine/build/build/chess_library.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		0DD10CFC26F740E3AE098361 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/bentan/chessEngine/build/external/chess-library-master/MinSizeRel";
 				EXECUTABLE_PREFIX = "";
 				EXECUTABLE_SUFFIX = "";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
@@ -630,23 +650,20 @@ exit 0";
 				GCC_OPTIMIZATION_LEVEL = s;
 				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/bentan/chessEngine/external/chess-library-master/src",/Users/bentan/chessEngine,"$(inherited)");
 				INSTALL_PATH = "";
-				LD_RUNPATH_SEARCH_PATHS = (/opt/homebrew/lib,"$(inherited)");
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' ";
-				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/bentan/chessEngine/build/external/chess-library-master/MinSizeRel/libchess_library.a","/opt/homebrew/lib/libsfml-graphics.2.6.0.dylib","/opt/homebrew/lib/libsfml-window.2.6.0.dylib","/opt/homebrew/lib/libsfml-system.2.6.0.dylib","$(inherited)");
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/bentan/chessEngine/build/external/chess-library-master/MinSizeRel/libchess_library.a","$(inherited)");
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = chessEngine;
+				PRODUCT_NAME = chess_library_tests;
 				SECTORDER_FLAGS = "";
-				SYSTEM_HEADER_SEARCH_PATHS = (/opt/homebrew/include,"$(inherited)");
-				TARGET_TEMP_DIR = "/Users/bentan/chessEngine/build/build/chessEngine.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				TARGET_TEMP_DIR = "/Users/bentan/chessEngine/build/build/chess_library_tests.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("$(inherited)");
 			};
 			name = MinSizeRel;
 		};
-		2A4C45D8AFEC4DE890CD33EB /* Release */ = {
+		1C42060560EE4B01AEAC07A6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -676,37 +693,27 @@ exit 0";
 			};
 			name = Release;
 		};
-		2A6D8DDD32AB4AE19BC1AD9E /* RelWithDebInfo */ = {
+		286CE4777A724C388AE76C34 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = /Users/bentan/chessEngine/build/RelWithDebInfo;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 2;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/bentan/chessEngine/external/chess-library-master/src",/Users/bentan/chessEngine,"$(inherited)");
-				INSTALL_PATH = "";
-				LD_RUNPATH_SEARCH_PATHS = (/opt/homebrew/lib,"$(inherited)");
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=gnu++17' ";
-				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/bentan/chessEngine/build/external/chess-library-master/RelWithDebInfo/libchess_library.a","/opt/homebrew/lib/libsfml-graphics.2.6.0.dylib","/opt/homebrew/lib/libsfml-window.2.6.0.dylib","/opt/homebrew/lib/libsfml-system.2.6.0.dylib","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = chessEngine;
-				SECTORDER_FLAGS = "";
-				SYSTEM_HEADER_SEARCH_PATHS = (/opt/homebrew/include,"$(inherited)");
-				TARGET_TEMP_DIR = "/Users/bentan/chessEngine/build/build/chessEngine.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/bentan/chessEngine/build/build;
 			};
-			name = RelWithDebInfo;
+			name = Release;
 		};
-		3647F506C7AE49FBBD8C72E3 /* Debug */ = {
+		289AA67DD35B410885B029B4 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/bentan/chessEngine/build/build;
+			};
+			name = MinSizeRel;
+		};
+		2A7081B45032465599C454F0 /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -726,37 +733,93 @@ exit 0";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("$(inherited)");
 			};
-			name = Debug;
+			name = MinSizeRel;
 		};
-		371611FF3B0146C2AA3FD33E /* MinSizeRel */ = {
+		443A178B8DBA4D629D627979 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/bentan/chessEngine/build/build;
+			};
+			name = RelWithDebInfo;
+		};
+		4D19BFE4D26742B1B3980904 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = arm64;
 				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/bentan/chessEngine/build/external/chess-library-master/MinSizeRel";
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		4DA7C7863491470483029619 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/bentan/chessEngine/build/MinSizeRel;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = s;
 				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/bentan/chessEngine/external/chess-library-master/src",/Users/bentan/chessEngine,"$(inherited)");
 				INSTALL_PATH = "";
-				LIBRARY_STYLE = STATIC;
+				LD_RUNPATH_SEARCH_PATHS = (/opt/homebrew/lib,"$(inherited)");
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' ";
-				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/bentan/chessEngine/build/external/chess-library-master/MinSizeRel/libchess_library.a","/opt/homebrew/lib/libsfml-graphics.2.6.0.dylib","/opt/homebrew/lib/libsfml-window.2.6.0.dylib","/opt/homebrew/lib/libsfml-system.2.6.0.dylib","$(inherited)");
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = chess_library;
+				PRODUCT_NAME = chessEngine;
 				SECTORDER_FLAGS = "";
-				TARGET_TEMP_DIR = "/Users/bentan/chessEngine/build/build/chess_library.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				SYSTEM_HEADER_SEARCH_PATHS = (/opt/homebrew/include,"$(inherited)");
+				TARGET_TEMP_DIR = "/Users/bentan/chessEngine/build/build/chessEngine.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("$(inherited)");
 			};
 			name = MinSizeRel;
 		};
-		3B37F3D922124331852A5378 /* Release */ = {
+		543A9EEA4D5443AD9E7D1519 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		67066DC1C9B140CD9D23B1D2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -783,34 +846,7 @@ exit 0";
 			};
 			name = Release;
 		};
-		4B35C9179EC54286AC0F6F49 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/bentan/chessEngine/build/external/chess-library-master/Debug";
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CPLUSPLUSFLAGS = "   '-std=gnu++17' ";
-				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/bentan/chessEngine/build/external/chess-library-master/Debug/libchess_library.a","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = chess_library_tests;
-				SECTORDER_FLAGS = "";
-				TARGET_TEMP_DIR = "/Users/bentan/chessEngine/build/build/chess_library_tests.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Debug;
-		};
-		4E06DB39961C4121BDEC3273 /* Debug */ = {
+		78B8356C7F5544F3BA4896F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -840,7 +876,7 @@ exit 0";
 			};
 			name = Debug;
 		};
-		66CF7FD1343644809C1A3F7D /* RelWithDebInfo */ = {
+		88AD8698301F4F5DB6104634 /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -868,7 +904,29 @@ exit 0";
 			};
 			name = RelWithDebInfo;
 		};
-		73D136057B864756B0293680 /* Debug */ = {
+		89092F1E4F4F47C28543C386 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		96CCFD7A0F0E44D487CB6611 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -896,45 +954,144 @@ exit 0";
 			};
 			name = Debug;
 		};
-		863D34643A2A4E28BC36832A /* Release */ = {
+		9999782EBB6F4C638A6EBE3A /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = arm64;
 				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/bentan/chessEngine/build/external/chess-library-master/Release";
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .a;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				CONFIGURATION_BUILD_DIR = /Users/bentan/chessEngine/build/RelWithDebInfo;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_OPTIMIZATION_LEVEL = 2;
 				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/bentan/chessEngine/external/chess-library-master/src",/Users/bentan/chessEngine,"$(inherited)");
 				INSTALL_PATH = "";
-				LIBRARY_STYLE = STATIC;
+				LD_RUNPATH_SEARCH_PATHS = (/opt/homebrew/lib,"$(inherited)");
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' ";
-				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=gnu++17' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/bentan/chessEngine/build/external/chess-library-master/RelWithDebInfo/libchess_library.a","/opt/homebrew/lib/libsfml-graphics.2.6.0.dylib","/opt/homebrew/lib/libsfml-window.2.6.0.dylib","/opt/homebrew/lib/libsfml-system.2.6.0.dylib","$(inherited)");
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = chess_library;
+				PRODUCT_NAME = chessEngine;
 				SECTORDER_FLAGS = "";
-				TARGET_TEMP_DIR = "/Users/bentan/chessEngine/build/build/chess_library.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				SYSTEM_HEADER_SEARCH_PATHS = (/opt/homebrew/include,"$(inherited)");
+				TARGET_TEMP_DIR = "/Users/bentan/chessEngine/build/build/chessEngine.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("$(inherited)");
 			};
-			name = Release;
+			name = RelWithDebInfo;
 		};
-		8890CE7C66FF4DCDAACF7531 /* MinSizeRel */ = {
+		9CCABB6374444D3D90E88AAB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = arm64;
 				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk;
-				SWIFT_COMPILATION_MODE = wholemodule;
 				SYMROOT = /Users/bentan/chessEngine/build/build;
+			};
+			name = Debug;
+		};
+		A87E23C0B6EE4B799D6D3AAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/bentan/chessEngine/build/external/chess-library-master/Debug";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "   '-std=gnu++17' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/bentan/chessEngine/build/external/chess-library-master/Debug/libchess_library.a","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = chess_library_tests;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/bentan/chessEngine/build/build/chess_library_tests.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		BB239F2BFA70448AB64DE848 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		CA9F66F12B214C2FBC91E371 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/bentan/chessEngine/build/external/chess-library-master/RelWithDebInfo";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=gnu++17' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/bentan/chessEngine/build/external/chess-library-master/RelWithDebInfo/libchess_library.a","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = chess_library_tests;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/bentan/chessEngine/build/build/chess_library_tests.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		D9651A7766AC4E6C8B6DCD73 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
 			};
 			name = MinSizeRel;
 		};
-		8F640A329F404360A55502DF /* Debug */ = {
+		E321CC42AAA440E0A996A78D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -956,228 +1113,71 @@ exit 0";
 			};
 			name = Debug;
 		};
-		ADDC509C473A4F8097B36FB3 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		B6D033967CE046EBA6D4CB47 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		C37B240E1FF24EAA90817C4B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = arm64;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SYMROOT = /Users/bentan/chessEngine/build/build;
-			};
-			name = Release;
-		};
-		C45D89338A3D470DA4DDA9CD /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = arm64;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SYMROOT = /Users/bentan/chessEngine/build/build;
-			};
-			name = RelWithDebInfo;
-		};
-		DFFE4E4C3E1940DA87C1017E /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/bentan/chessEngine/build/external/chess-library-master/MinSizeRel";
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = s;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' ";
-				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/bentan/chessEngine/build/external/chess-library-master/MinSizeRel/libchess_library.a","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = chess_library_tests;
-				SECTORDER_FLAGS = "";
-				TARGET_TEMP_DIR = "/Users/bentan/chessEngine/build/build/chess_library_tests.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		E637E16156A443268D7265B6 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		EC1462868A214BF29D5D65EA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Release;
-		};
-		F4A749CE70D74E2FAFA04E88 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4523E469A7854F2F9032C3B4 /* Build configuration list for PBXNativeTarget "chessEngine" */ = {
+		0B0BEC4CF33642FABF86D45A /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4E06DB39961C4121BDEC3273 /* Debug */,
-				2A4C45D8AFEC4DE890CD33EB /* Release */,
-				22C1F31CDD2C454AB3A8DF0C /* MinSizeRel */,
-				2A6D8DDD32AB4AE19BC1AD9E /* RelWithDebInfo */,
+				89092F1E4F4F47C28543C386 /* Debug */,
+				543A9EEA4D5443AD9E7D1519 /* Release */,
+				2A7081B45032465599C454F0 /* MinSizeRel */,
+				BB239F2BFA70448AB64DE848 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		6D7B07FED8DD4537B32A05BF /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+		2603105CE4B045EA97947F35 /* Build configuration list for PBXNativeTarget "chess_library" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3647F506C7AE49FBBD8C72E3 /* Debug */,
-				EC1462868A214BF29D5D65EA /* Release */,
-				E637E16156A443268D7265B6 /* MinSizeRel */,
-				F4A749CE70D74E2FAFA04E88 /* RelWithDebInfo */,
+				96CCFD7A0F0E44D487CB6611 /* Debug */,
+				07F0AD1085914D879742DB8A /* Release */,
+				0AB2CF6D2E9C4D0AB69B05CA /* MinSizeRel */,
+				88AD8698301F4F5DB6104634 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		8DA1DB465262448FB0E56608 /* Build configuration list for PBXNativeTarget "chess_library_tests" */ = {
+		6E1EEC3D1D0D427485D61212 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4B35C9179EC54286AC0F6F49 /* Debug */,
-				3B37F3D922124331852A5378 /* Release */,
-				DFFE4E4C3E1940DA87C1017E /* MinSizeRel */,
-				1D90D946D0A24C5D9E5E5643 /* RelWithDebInfo */,
+				E321CC42AAA440E0A996A78D /* Debug */,
+				4D19BFE4D26742B1B3980904 /* Release */,
+				D9651A7766AC4E6C8B6DCD73 /* MinSizeRel */,
+				004AD8A231FB402CB5D26DBF /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		A52D87D394374D60A8A08722 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+		8A8B0B5FBE53433A80F147A1 /* Build configuration list for PBXNativeTarget "chessEngine" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8F640A329F404360A55502DF /* Debug */,
-				07DE235037CE47DE87AF035D /* Release */,
-				ADDC509C473A4F8097B36FB3 /* MinSizeRel */,
-				B6D033967CE046EBA6D4CB47 /* RelWithDebInfo */,
+				78B8356C7F5544F3BA4896F2 /* Debug */,
+				1C42060560EE4B01AEAC07A6 /* Release */,
+				4DA7C7863491470483029619 /* MinSizeRel */,
+				9999782EBB6F4C638A6EBE3A /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		E4D7A7B321504A55A0E75869 /* Build configuration list for PBXProject "chessEngine" */ = {
+		C3832026CC16408FA54DCAB9 /* Build configuration list for PBXNativeTarget "chess_library_tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				18CF92CACC8D4918A782F865 /* Debug */,
-				C37B240E1FF24EAA90817C4B /* Release */,
-				8890CE7C66FF4DCDAACF7531 /* MinSizeRel */,
-				C45D89338A3D470DA4DDA9CD /* RelWithDebInfo */,
+				A87E23C0B6EE4B799D6D3AAC /* Debug */,
+				67066DC1C9B140CD9D23B1D2 /* Release */,
+				0DD10CFC26F740E3AE098361 /* MinSizeRel */,
+				CA9F66F12B214C2FBC91E371 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		F3C51AFD136E42B0A58462AF /* Build configuration list for PBXNativeTarget "chess_library" */ = {
+		CECAD6837B064606B0781381 /* Build configuration list for PBXProject "chessEngine" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				73D136057B864756B0293680 /* Debug */,
-				863D34643A2A4E28BC36832A /* Release */,
-				371611FF3B0146C2AA3FD33E /* MinSizeRel */,
-				66CF7FD1343644809C1A3F7D /* RelWithDebInfo */,
+				9CCABB6374444D3D90E88AAB /* Debug */,
+				286CE4777A724C388AE76C34 /* Release */,
+				289AA67DD35B410885B029B4 /* MinSizeRel */,
+				443A178B8DBA4D629D627979 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
