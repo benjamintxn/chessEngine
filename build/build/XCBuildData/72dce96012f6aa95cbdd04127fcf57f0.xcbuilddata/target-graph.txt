@@ -1,0 +1,13 @@
+Target dependency graph (5 targets)
+ZERO_CHECK in chessEngine, no dependencies
+chess_library in chessEngine, no dependencies
+chessEngine in chessEngine, depends on:
+ZERO_CHECK in chessEngine (explicit)
+chess_library in chessEngine (explicit)
+chess_library_tests in chessEngine, depends on:
+chess_library in chessEngine (explicit)
+ALL_BUILD in chessEngine, depends on:
+chessEngine in chessEngine (explicit)
+ZERO_CHECK in chessEngine (explicit)
+chess_library in chessEngine (explicit)
+chess_library_tests in chessEngine (explicit)

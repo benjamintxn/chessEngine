@@ -62,84 +62,55 @@ public:
         
     }
 
-    void handleMouseClick(const sf::Vector2i& clickPosition);
-    void handleMouseRelease(const sf::Vector2i& releasePosition);
-
 private:
     
     void loadTextures();
-    void setupBoardFromFEN(const string& fen);
+    void updateBoardFromFEN(const string& fen);
     void render();
+    void handleMouseClick(const sf::Vector2i& clickPosition);
+    void handleMouseRelease(const sf::Vector2i& releasePosition);
+    string expandFEN(const string& fen);
+    char determinePieceAtPosition(const std::string& expandedFEN, int rank, int file);
+    string updateFEN(int file, int rank);
 
     sf::RenderWindow window;
     vector<sf::Texture> pieceTextures;
     vector<sf::Sprite> pieceSprites;
     const int squareSize = 64; // Adjust this to your square size
+    string FEN = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1";
     
 };
 
-void displayBoard::handleMouseClick(const sf::Vector2i& clickPosition) {
-    
-    // Convert pixel position to chessboard coordinates
-    int file = clickPosition.x / squareSize;
-    int rank = clickPosition.y / squareSize;
-
-    // Check if there's a piece at the clicked position
-    for (size_t i = 0; i < pieceSprites.size(); ++i) {
-        
-        sf::FloatRect bounds = pieceSprites[i].getGlobalBounds();
-        if (bounds.contains(static_cast<float>(clickPosition.x), static_cast<float>(clickPosition.y))) {
-            
-            // Store the selected piece's texture index and position
-            selectedTextureIndex = static_cast<int>(i);
-            selectedPosition = sf::Vector2i(file, rank);
-            break;
-            
-        }
-        
-    }
-    
-}
-
-void displayBoard::handleMouseRelease(const sf::Vector2i& releasePosition) {
-    
-    if (selectedTextureIndex != -1) {
-        
-        // Convert pixel position to chessboard coordinates
-        int file = releasePosition.x / squareSize;
-        int rank = releasePosition.y / squareSize;
-
-        // Check if the release position is a valid square for the selected piece to move
-        // Perform the necessary checks for valid moves, update FEN, etc.
-
-        // If the move is valid, update the selected piece's position
-        pieceSprites[selectedTextureIndex].setPosition(file * squareSize, rank * squareSize);
-
-        // Clear the selectedTextureIndex and selectedPosition variables
-        selectedTextureIndex = -1;
-        selectedPosition = sf::Vector2i(-1, -1);
-
-        // Redraw the board
-        render();
-        
-    }
-    
-}
-
-// Implement the constructor
 displayBoard::displayBoard(const string& fen) {
     
     loadTextures();
-    setupBoardFromFEN(fen);
+    updateBoardFromFEN(fen);
     
     // Create the window
     window.create(sf::VideoMode(8 * squareSize, 8 * squareSize), "Chess Board");
     
 }
 
-// Implement the setupBoardFromFEN method
-void displayBoard::setupBoardFromFEN(const string& fen) {
-    // Parse the FEN and position the pieces accordingly
+void displayBoard::loadTextures() {
+    
+    vector<string> pieceNames = {
+        
+        "w_pawn", "w_king", "w_queen", "w_bishop", "w_knight", "w_rook",
+        "b_pawn", "b_king", "b_queen", "b_bishop", "b_knight", "b_rook"
+        
+    };
+
+    for (const string& pieceName : pieceNames) {
+        
+        sf::Texture pieceTexture;
+        pieceTexture.loadFromFile("/Users/bentan/chessEngine/pieces/" + pieceName + ".png");
+        pieceTextures.push_back(pieceTexture);
+        
+    }
+    
+}
+
+void displayBoard::updateBoardFromFEN(const string& fen) {
 
     // Clear existing sprites
     pieceSprites.clear();
@@ -175,37 +146,13 @@ void displayBoard::setupBoardFromFEN(const string& fen) {
                 
             };
 
-            textureIndex = pieceTextureIndices[c];
-            
-            // Inside setupBoardFromFEN method
-            sf::Sprite sprite(pieceTextures[textureIndex]);
+            sf::Sprite sprite(pieceTextures[pieceTextureIndices[c]]);
             sprite.setPosition(file * squareSize, rank * squareSize);
             sprite.setScale(static_cast<float>(squareSize) / sprite.getTexture()->getSize().x, static_cast<float>(squareSize) / sprite.getTexture()->getSize().y);
             pieceSprites.push_back(sprite);
-
             file++;
             
         }
-        
-    }
-    
-}
-
-// Implement the loadTextures method
-void displayBoard::loadTextures() {
-    
-    vector<string> pieceNames = {
-        
-        "w_pawn", "w_king", "w_queen", "w_bishop", "w_knight", "w_rook",
-        "b_pawn", "b_king", "b_queen", "b_bishop", "b_knight", "b_rook"
-        
-    };
-
-    for (const string& pieceName : pieceNames) {
-        
-        sf::Texture pieceTexture;
-        pieceTexture.loadFromFile("/Users/bentan/chessEngine/pieces/" + pieceName + ".png");
-        pieceTextures.push_back(pieceTexture);
         
     }
     
@@ -249,29 +196,108 @@ void displayBoard::render() {
     
 }
 
-class displayPiece {
+void displayBoard::handleMouseClick(const sf::Vector2i& clickPosition) {
     
-public:
+    string expandedFEN = expandFEN(FEN);
     
-    displayPiece() : textures(12), sprites(12) {
+    // Convert pixel position to chessboard coordinates
+    int file = clickPosition.x / squareSize;
+    int rank = clickPosition.y / squareSize;
+    
+    char positionOfPiece = determinePieceAtPosition(expandedFEN, rank, file);
+    
+    cout << positionOfPiece;
+
+    // Check if there's a piece at the clicked position
+    for (size_t i = 0; i < pieceSprites.size(); ++i) {
         
-        const string pieceName[12] = {"w_pawn", "w_king", "w_queen", "w_bishop", "w_knight", "w_rook", "b_pawn", "b_king", "b_queen", "b_bishop", "b_knight", "b_rook"};
-        
-        for (int i = 0; i < 12; i++) {
+        sf::FloatRect bounds = pieceSprites[i].getGlobalBounds();
+        if (bounds.contains(static_cast<float>(clickPosition.x), static_cast<float>(clickPosition.y))) {
             
-            textures[i].loadFromFile("/Users/bentan/chessEngine/pieces/" + pieceName[i] + ".png");
-            textures[i].setSmooth(true);
-            sprites[i].setTexture(textures[i]);
+            // Store the selected piece's texture index and position
+            selectedTextureIndex = static_cast<int>(i);
+            selectedPosition = sf::Vector2i(file, rank);
+            break;
             
         }
         
     }
+    
+}
 
-private:
+void displayBoard::handleMouseRelease(const sf::Vector2i& releasePosition) {
     
-    vector<sf::Texture> textures;
-    vector<sf::Sprite> sprites;
+    if (selectedTextureIndex != -1) {
+        
+        // Convert pixel position to chessboard coordinates
+        int file = releasePosition.x / squareSize;
+        int rank = releasePosition.y / squareSize;
+
+        // Check if the release position is a valid square for the selected piece to move
+        // Perform the necessary checks for valid moves, update FEN, etc.
+
+        // If the move is valid, update the selected piece's position
+        pieceSprites[selectedTextureIndex].setPosition(file * squareSize, rank * squareSize);
+
+        // Clear the selectedTextureIndex and selectedPosition variables
+        selectedTextureIndex = -1;
+        selectedPosition = sf::Vector2i(-1, -1);
+
+        // Redraw the board
+        render();
+        
+    }
     
-};
+}
+
+string displayBoard::expandFEN(const std::string& fen) {
+    
+    std::string expandedFEN = "";
+    
+    for (char c : fen) {
+        
+        if (isdigit(c)) {
+            
+            int emptySquares = c - '0';
+            for (int i = 0; i < emptySquares; ++i) {
+                
+                expandedFEN += 'x';
+                
+            }
+            
+        } else if (isalpha(c)) {
+            
+            expandedFEN += c;
+            
+        }
+        
+    }
+    
+    return expandedFEN;
+    
+}
+
+char displayBoard::determinePieceAtPosition(const std::string& expandedFEN, int rank, int file) {
+    
+    int linearIndex = (7 - rank) * 8 + file;
+    
+    if (linearIndex < 0 || linearIndex >= expandedFEN.size()) {
+        
+        return ' ';
+        
+    }
+    
+    return expandedFEN[linearIndex];
+    
+}
+
+string displayBoard::updateFEN(int file, int rank) {
+    
+    // "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
+    
+    
+    
+    
+}
 
 #endif // FUNCTIONALITY_HPP
